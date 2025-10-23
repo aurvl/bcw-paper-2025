@@ -8,7 +8,7 @@ This repository provides supporting data, code, and visualization tools for the 
 
 **Hilmi, N., Vehi, L. A. D. V., Treskova, M., Sabourault, C., & Levin, L. (2025). _Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth_.**
 
-The study develops an integrated metric of **Blue Carbon Wealth (BCW)** that combines **Coastal Blue Carbon Ecosystems (BCEs)** — mangroves, seagrasses, and saltmarshes — with the **open-ocean Biological Carbon Pump (BCP)**, the large-scale transfer of organic carbon driven by phytoplankton.
+The study develops an integrated metric of **Blue Carbon Wealth** (BCW) that combines **Coastal Blue Carbon Ecosystems** (BCEs), including mangroves, seagrasses, and saltmarshes, with the open-ocean **Biological Carbon Pump** (BCP), the large-scale transfer of organic carbon driven by phytoplankton.
 
 ---
 
