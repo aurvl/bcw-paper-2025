@@ -48,6 +48,7 @@ The structure below summarizes its components.
     cd bcw-paper-2025
     ```
 2. **Set up a Python environment**
+    Before getting started, please ensure you have Python 3.11.9 installed.
     ```bash
     python -m venv env
     ```
@@ -65,8 +66,8 @@ The structure below summarizes its components.
     ```
 4. **Run the Python scripts**
     ```bash
-    python generate_data.py # To preprocess and compile datasets
-    python compute_bcw.py   # To calculate Blue Carbon Wealth of nations
+    python generate_data.py        # To preprocess and compile datasets
+    python compute_bcw.py          # To calculate Blue Carbon Wealth of nations
     ```
 5. **Visualize results using Jupyter Notebooks**
     Run `jupyter notebook` and open the notebooks in the `notebooks/` directory to generate figures and tables.
