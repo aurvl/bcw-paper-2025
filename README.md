@@ -3,7 +3,7 @@
 
 **Authors:** Nathalie Hilmi, Loua Aurel De Vince Vehi, Marina Treskova, Cécile Sabourault, Lisa Levin  
 
----
+--- 
 
 This repository provides supporting data, code, and visualization tools for the article:
 
