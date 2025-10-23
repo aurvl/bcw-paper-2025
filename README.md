@@ -1,5 +1,5 @@
 # Revisiting Blue Natural Capital  
-### Assessing Global and National Blue Carbon Wealth  
+## Assessing Global and National Blue Carbon Wealth  
 
 **Authors:** Nathalie Hilmi, Loua Aurel De Vince Vehi, Marina Treskova, Cécile Sabourault, Lisa Levin  
 
@@ -10,11 +10,6 @@ This repository provides supporting data, code, and visualization tools for the 
 **Hilmi, N., Vehi, L. A. D. V., Treskova, M., Sabourault, C., & Levin, L. (2025). _Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth_.**
 
 The study develops an integrated metric of **Blue Carbon Wealth (BCW)** that combines **Coastal Blue Carbon Ecosystems (BCEs)** — mangroves, seagrasses, and saltmarshes — with the **open-ocean Biological Carbon Pump (BCP)**, the large-scale transfer of organic carbon driven by phytoplankton.
-
-Using an updated **Global Social Cost of Carbon** (GSCC = US$ 573.8 ± 144.7 /tCO₂) from Ricke et al. (2018), the analysis quantifies both the **carbon removals** and their **monetized value** at global and national scales. Coastal ecosystems sequester about **112 ± 24.6 Mt C yr⁻¹**, valued at **US$ 236 ± 51.8 billion yr⁻¹**, while adding the BCP raises global BCW to **US$ 2.38 ± 0.35 trillion yr⁻¹** for **1.13 ± 0.17 Gt C yr⁻¹** of total removals.
-
-Results show that **Small Island Developing States** hold the highest per-capita BCW (≈ US$ 5,200 yr⁻¹), whereas large economies dominate in absolute value. By integrating spatial data on coastal and oceanic processes under an equity-sensitive framework, the study positions BCW as a component of **inclusive wealth** and a foundation for **blue finance instruments** such as blue bonds, debt-for-nature swaps, and payments for ecosystem services.
-
 
 ---
 
