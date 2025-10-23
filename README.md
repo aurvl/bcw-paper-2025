@@ -44,18 +44,18 @@ The structure below summarizes its components.
 
 1. **Clone this repository**  
     ```bash
-    git clone https://github.com/<username>/<repo_name>.git
-    cd <repo_name>
+    git clone https://github.com/aurvl/bcw-paper-2025.git
+    cd bcw-paper-2025
     ```
 2. **Set up a Python environment**
     ```bash
     python -m venv env
     ```
-    - ***Windows:***
+    - Windows:
         ```bash
         .\env\Scripts\activate
         ```
-    - ***macOS/Linux:***
+    - macOS/Linux:
         ```bash
         source env/bin/activate
         ```
