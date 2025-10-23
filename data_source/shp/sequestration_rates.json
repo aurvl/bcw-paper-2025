@@ -1,0 +1,32 @@
+{
+  "mangroves": {
+    "rate": 183.6,
+    "ci_lower": 168.9,
+    "ci_upper": 198.3,
+    "se": 14.7,
+    "references": [
+      "Algoni 2022 - https://doi.org/10.3390/f13020149",
+      "https://www.sciencedirect.com/science/article/pii/S1385110124000376"
+    ]
+  },
+  "seagrass": {
+    "rate": 220.7,
+    "ci_lower": 200.6,
+    "ci_upper": 240.8,
+    "se": 20.1,
+    "references": [
+      "Algoni 2018 - https://link.springer.com/chapter/10.1007/978-3-319-91698-9_4"
+    ]
+  },
+  "saltmarshes": {
+    "rate": 168.0,
+    "ci_lower": 161.0,
+    "ci_upper": 175.0,
+    "se": 7.0,
+    "references": [
+      "https://www.nature.com/articles/s41586-022-05355-z",
+      "https://doi.org/10.1038/s41586-022-05355-z",
+      "Wang, F. et al. Global blue carbon accumulation in tidal wetlands increases with climate change. Natl Sci. Rev. 8, nwaa296 (2021)."
+    ]
+  }
+}
