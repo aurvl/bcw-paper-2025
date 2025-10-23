@@ -1,5 +1,4 @@
-# Revisiting Blue Natural Capital  
-## Assessing Global and National Blue Carbon Wealth  
+# Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth  
 
 **Authors:** Nathalie Hilmi, Loua Aurel De Vince Vehi, Marina Treskova, Cécile Sabourault, Lisa Levin  
 
@@ -85,7 +84,7 @@ When reusing or citing this work, please reference:
 * **BibTex:**
 
     ```latex
-    @misc{bcw_repo,
+    @misc{bcw_data_2025,
     author       = {Hilmi, Nathalie and Vehi, Loua Aurel De Vince and Treskova, Marina and Sabourault, Cécile and Levin, Lisa},
     title        = {Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth — Data and Code Repository},
     year         = {2025},
