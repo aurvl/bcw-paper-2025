@@ -46,7 +46,7 @@ The structure below summarizes its components.
     git clone https://github.com/aurvl/bcw-paper-2025.git
     cd bcw-paper-2025
     ```
-2. **Set up a Python environment**
+2. **Set up a Python environment:**
     Before getting started, please ensure you have Python 3.11.9 installed.
     ```bash
     python -m venv env
