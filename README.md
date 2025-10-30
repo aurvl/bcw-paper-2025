@@ -27,14 +27,13 @@ The structure below summarizes its components.
 │
 ├── utils/                         # Helper modules and computation tools
 │ ├── bce_areas.py                 # BCE area extraction and cleaning
-│ ├── compute_gscc.py              # GSCC and BCW valuation functions
-│ ├── 
-│ └── 
+│ ├── adding_eco_data.py           # Economic data processing functions
+│ ├── compute_bcw.py               # GSCC, BCP and BCW valuation functions
+│ └── functions.py                 # General utility functions
 │
-├── generate_data.py               # Main script to build harmonized datasets
-├── compute_bcw.py                 # Main script to compute Blue Carbon Wealth
+├── main.py                        # Main script to build harmonized datasets and compute Blue Carbon Wealth
 ├── notebook.ipynb                 # Jupyter notebook for analysis and visualization
-├── bcw.csv                        # Final Blue Carbon Wealth outputs
+├── country_level_bcw.csv          # Final Blue Carbon Wealth data
 ├── requirements.txt               # Dependencies list for environment setup 
 └── README.md                      # Repository description and documentation
 ```
@@ -65,11 +64,10 @@ The structure below summarizes its components.
     ```
 4. **Run the Python scripts**
     ```bash
-    python generate_data.py        # To preprocess and compile datasets
-    python compute_bcw.py          # To calculate Blue Carbon Wealth of nations
+    python main.py        # To preprocess, compile datasets calculate Blue Carbon Wealth of nations
     ```
 5. **Visualize results using Jupyter Notebooks**
-    Run `jupyter notebook` and open the notebooks in the `notebooks/` directory to generate figures and tables.
+    Run `notebook.ipynb` to generate figures and tables.
 
 ---
 

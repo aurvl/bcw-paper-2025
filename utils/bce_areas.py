@@ -1,5 +1,6 @@
 # functions used to create the dataframe containing BCEs (Mangroves, Saltmarshes, Seagrasses) areas by EEZs
 import pandas as pd
+import numpy as np
 import json
 from typing import List, Dict, Any
 
@@ -145,32 +146,31 @@ def compute_rates(df: pd.DataFrame, json_path: str, bce_columns: List[str]) -> p
     saltmarshes_sr = rates['saltmarshes_sr']
     saltmarshes_sr_low = rates['saltmarshes_sr_low']
     saltmarshes_sr_high = rates['saltmarshes_sr_high']
-    seagrasses_sr = rates['seagrasses_sr']
-    seagrasses_sr_high = rates['seagrasses_sr_high']
-    seagrasses_sr_low = rates['seagrasses_sr_low']
+    seagrass_sr = rates['seagrass_sr']
+    seagrass_sr_high = rates['seagrass_sr_high']
+    seagrass_sr_low = rates['seagrass_sr_low']
     
     saltmarshes_col = bce_columns[0]
     seagrasses_col = bce_columns[1]
     mangroves_col = bce_columns[2]
     
-    # compute :
-    #     'Uptake Salt (t/km2)', 'Uptake Seag (t/km2)', 'Uptake Mang (t/km2)',
-    #     'Uptake Salt LOW', 'Uptake Seag LOW', 'Uptake Mang LOW', 
-    #     'Uptake Salt HIGH', 'Uptake Seag HIGH', 'Uptake Mang HIGH',
-    #     'tot_uptake (tC)', 'tot_upt_LOW', 'tot_upt_HIGH'
+    # compute uptakes
     df['Uptake Salt (t/km2)'] = df[saltmarshes_col] * saltmarshes_sr
-    df['Uptake Seag (t/km2)'] = df[seagrasses_col] * seagrasses_sr
+    df['Uptake Seag (t/km2)'] = df[seagrasses_col] * seagrass_sr
     df['Uptake Mang (t/km2)'] = df[mangroves_col] * mangroves_sr
     df['Uptake Salt LOW'] = df[saltmarshes_col] * saltmarshes_sr_low
-    df['Uptake Seag LOW'] = df[seagrasses_col] * seagrasses_sr_low
+    df['Uptake Seag LOW'] = df[seagrasses_col] * seagrass_sr_low
     df['Uptake Mang LOW'] = df[mangroves_col] * mangroves_sr_low
     df['Uptake Salt HIGH'] = df[saltmarshes_col] *  saltmarshes_sr_high
-    df['Uptake Seag HIGH'] = df[seagrasses_col] * seagrasses_sr_high
+    df['Uptake Seag HIGH'] = df[seagrasses_col] * seagrass_sr_high
     df['Uptake Mang HIGH'] = df[mangroves_col] * mangroves_sr_high
     
     # compute total uptake
-    df['tot_uptake (tC)'] = df['Uptake Salt (t/km2)'] + df['Uptake Seag (t/km2)'] + df['Uptake Mang (t/km2)']
-    df['tot_upt_LOW'] = df['Uptake Salt LOW'] + df['Uptake Seag LOW'] + df['Uptake Mang LOW']
-    df['tot_upt_HIGH'] = df['Uptake Salt HIGH'] + df['Uptake Seag HIGH'] + df['Uptake Mang HIGH']
+    df['tot_uptake (tC)'] = df[['Uptake Salt (t/km2)', 'Uptake Seag (t/km2)', 
+                                'Uptake Mang (t/km2)']].sum(axis=1).replace(0, np.nan)
+    df['tot_upt_LOW'] = df[['Uptake Salt LOW', 'Uptake Seag LOW', 
+                            'Uptake Mang LOW']].sum(axis=1).replace(0, np.nan)
+    df['tot_upt_HIGH'] = df[['Uptake Salt HIGH', 'Uptake Seag HIGH', 
+                             'Uptake Mang HIGH']].sum(axis=1).replace(0, np.nan)
     
     return df

@@ -2,3 +2,6 @@ venv/
 utils/__pycache__/
 Areas.xlsx
 data_source/gscc/notebook.ipynb
+test.csv
+bash.exe.stackdump
+MAIN.ipynb
