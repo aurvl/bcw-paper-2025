@@ -67,6 +67,7 @@ The structure below summarizes its components.
     python main.py        # To preprocess, compile datasets calculate Blue Carbon Wealth of nations
     ```
 5. **Visualize results using Jupyter Notebooks**
+
     Run `notebook.ipynb` to generate figures and tables.
 
 ---
