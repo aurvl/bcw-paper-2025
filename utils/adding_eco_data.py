@@ -82,7 +82,7 @@ def _add_debt(debt_path: str, df: pd.DataFrame) -> pd.DataFrame:
     return merged
 
 def reorganize_df(df: pd.DataFrame) -> pd.DataFrame:
-    df = df[['UNION', 'TERRITORY1', 'ISO_TER1', 'SOVEREIGN1', 'Continent', ' Groups', 'Population',
+    df = df[['UNION', 'TERRITORY1', 'ISO_TER1', 'SOVEREIGN1', 'Continent', 'Groups', 'Population',
              'Area_EEZ_KM2', 'GDP', 'CO2_emissions_2023', 'Debt (2015 US$)', 'saltmarshes_area_km2', 
              'seagrasses_area_km2', 'mangroves_area_km2']].copy()
     return df

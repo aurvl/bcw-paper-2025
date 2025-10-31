@@ -57,3 +57,26 @@ def per_capita(df: pd.DataFrame, columns: list, pop_columns: str) -> pd.DataFram
         per_capita_col = f"{col}_per_capita"
         df[per_capita_col] = df[col] / df[pop_columns]
     return df
+
+def ratio_computer(df: pd.DataFrame, numerator: str, denominator: str, new_column: str) -> pd.DataFrame:
+    """
+    This function computes the ratio of two specified columns and adds it as a new column.
+
+    Parameters
+    ----------
+    df : pandas.DataFrame
+        Input DataFrame containing the data.
+    numerator : str
+        Name of the numerator column.
+    denominator : str
+        Name of the denominator column.
+    new_column : str
+        Name of the new column to store the ratio.
+    Returns
+    -------
+    pandas.DataFrame
+        DataFrame with the new ratio column added.
+    """
+    df = df.copy()
+    df[new_column] = df[numerator] / df[denominator]
+    return df

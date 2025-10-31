@@ -123,6 +123,8 @@ def bcw_computer(df: pd.DataFrame, cmol: float, gscc: float, bcp_path: str) -> p
     df = bcp_inclusion(df, bcp_path, cmol, gscc)
     df['Total BCseq'] = df[['tot_uptake (tC)', 'BCP Seq (tC)']].sum(axis=1, min_count=1)
     df['Total BCW'] = df['Total BCW'] = df[['cBCW', 'oBCW']].sum(axis=1, min_count=1)
+    df = df.rename(columns={'ISO_TER1': 'ISO'})
+    df.to_csv('data_source/summary/bcw_data_before_grouping.csv', index=False)
     df = group_claims(
         df, pattern='Overlapping claim', new_name='Overlapping Claims', key_column='country_name'
     )
