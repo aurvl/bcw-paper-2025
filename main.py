@@ -69,5 +69,6 @@ print(f"Global Social Cost of Carbon (GSCC): {gscc_value:.2f} US$/tCO2")
 print(f"number of countries/territories: {data.shape[0]}")
 print(f"Global BCW : {(data['Total BCW'].sum() / 1e12):.3f} trillion US$")
 
+data = data.drop_duplicates()
 data.to_csv('country_level_bcw.csv', index=False)
 print('\nData saved to country_level_bcw.csv')
