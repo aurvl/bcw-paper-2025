@@ -1,6 +1,6 @@
-venv/
-utils/__pycache__/
-Areas.xlsx
-data_source/gscc/notebook.ipynb
-test.csv
+.venv/
+*__pycache__*
+*test*
 bash.exe.stackdump
+*trash/
+*tmpclaude*

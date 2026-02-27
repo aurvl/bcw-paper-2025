@@ -33,6 +33,7 @@ The structure below summarizes its components.
 │
 ├── main.py                        # Main script to build harmonized datasets and compute Blue Carbon Wealth
 ├── notebook.ipynb                 # Jupyter notebook for analysis and visualization
+├── gscc_explorer.ipynb            # Notebook to explore and validate GSCC computations
 ├── country_level_bcw.csv          # Final Blue Carbon Wealth data
 ├── requirements.txt               # Dependencies list for environment setup 
 └── README.md                      # Repository description and documentation
@@ -64,7 +65,7 @@ The structure below summarizes its components.
     ```
 4. **Run the Python scripts**
     ```bash
-    python main.py        # To preprocess, compile datasets calculate Blue Carbon Wealth of nations
+    python -m main        # To preprocess, compile datasets calculate Blue Carbon Wealth of nations
     ```
 5. **Visualize results using Jupyter Notebooks**
 

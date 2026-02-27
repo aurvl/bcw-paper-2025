@@ -1,7 +1,7 @@
-Continent,Saltmarshes (MtC),Seagrasses (MtC),Mangroves (MtC),BCEs (total),BCP (MtC),Total BCseq (GtC)
-Americas,4.06,6.04,6.77,16.87,328.61,345.48
-Europe,1.88,3.45,0.0,5.33,194.55,199.87
-Oceania,2.24,14.72,3.0,19.96,176.86,196.82
-Asia,0.97,21.38,5.22,27.57,153.54,181.11
-Africa,0.02,15.97,5.12,21.11,157.52,178.63
-Caribbean,0.01,22.0,0.44,22.44,6.08,28.52
+Continent,Saltmarshes (MtC),Seagrasses (MtC),Mangroves (MtC),Total BCEs (MtC),BCP (MtC),Total Seq (MtC)
+Americas,4.06,5.98,6.84,16.88,328.61,345.49
+Europe,1.85,3.35,0.0,5.2,194.54,199.74
+Oceania,2.24,14.59,3.03,19.86,176.86,196.72
+Asia,0.97,20.0,5.26,26.23,153.54,179.77
+Africa,0.02,15.83,5.16,21.02,157.52,178.54
+Caribbean,0.01,21.8,0.44,22.25,6.08,28.33
