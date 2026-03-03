@@ -10,10 +10,13 @@ SUMMARY_DIR = ROOT_DIR / "data_source" / "summary"
 OUTPUT_DIR = ROOT_DIR / "output"
 
 # set paths to data files
+# WLD_SHP = DATA_DIR / "shp" / "map2" / "ne_10m_admin_0_countries_lakes.shp"
 WLD_SHP = DATA_DIR / "shp" / "map" / "ne_110m_admin_0_countries.shp"
 USA_SPLIT_CSV = DATA_DIR / "shp" / "map" / "usa_split.csv"
 EEZ_PATH = DATA_DIR / "shp" / "data_EEZ_areas_by_zone.xlsx"
 EEZ_SHP = DATA_DIR / "shp" / "eez" / "EEZ_land_union_v4_202410.shp"
+MAPPING_JSON = DATA_DIR / "shp" / "map" / "mapping_final.json"
+
 SALTMARSHES_PATH = DATA_DIR / "shp" / "data_saltmarshes_areas_by_country.xlsx"
 SEAGRASSES_PATH = DATA_DIR / "shp" / "data_seagrasses_areas_by_country.xlsx"
 MANGROVES_PATH = DATA_DIR / "shp" / "data_mangroves_areas_by_country.xlsx"
@@ -43,60 +46,7 @@ BCP_PATH = DATA_DIR / "bcp" / "BCP_dta.csv"
 # territories that are not standard countries or have special statuses. 
 # The keys are the territory names as they appear in the dataset, and 
 # the values are the corresponding ISO codes or continent names.
-ISO_MAP1 = {
-    # Substitutions for territories with ISO code (not NaN)
-    "Bonaire": "BES",
-    "Sint-Eustatius": "BQ-SE",
-    "Saba": "BQ-SA",
-    "Sapodilla Cayes": "BZ-TOL",
-    "Kiribati": "KIR",
-    "Tristan Da Cunha": "SH-TA",
-    "Ascension": "SH-AC",
-    "Saint Helena": "SHN",
-    "Svalbard": "NO-21",
-    "Jan Mayen": "NO-22",
-    "Jarvis Island": "UM-86",
-    "Johnston Atoll": "UM-67",
-    "Howland and Baker islands": "UM-81",
-    "Palmyra Atoll": "UM-95",
-    "Wake Island": "UM-79",
-    "Navassa Island": "UM-76",
-    "Islas San Félix and San Ambrosio": "CL-V",
-    # Territories without ISO code (NaN)
-    "Abu musa, Greater and Lesser Tunb": "AE",
-    "Alaska": "US-AK",
-    "Alhucemas Islands": "ES-ALH",
-    "Andaman and Nicobar": "IN-AN",
-    "Antarctica": "ATA",
-    "Azores": "PT-20",
-    "Bajo Nuevo Bank": "CO-BN",
-    "Canary Islands": "ES-CN",
-    "Ceuta": "ES-CE",
-    "Chafarinas Islands": "ES-CHAF",
-    "Chagos Archipelago": "IO",
-    "Clipperton Island": "CP",
-    "Colombian Exclusive Economic Zone (Quitasueño Bank)": "CO-QS",
-    "Doumeira Islands": "DJ",
-    "Easter Island": "CL-EI",
-    "Galapagos": "EC-W",
-    "Glorioso Islands": "FR-GLO",
-    "Hala'ib Triangle": "SD",
-    "Hawaii": "US-HI",
-    "Kuril Islands": "RU-SA",
-    "Macquarie Island": "AU-TAS",
-    "Madeira": "PT-30",
-    "Matthew and Hunter Islands": "VU",
-    "Melilla": "ES-ML",
-    "Oecusse": "TL-OE",
-    "Peñón de Vélez de la Gomera": "ES-PVG",
-    "Perejil Island": "ES-PER",
-    "Prince Edward Islands": "ZA-PE",
-    "Senkaku Islands": "JP",
-    "Serrana Bank": "CO-SR",
-    "Serranilla Bank": "CO-SL",
-    "Trinidade": "BR-ES",
-    "Tromelin Island": "FR-TRO",
-}
+ISO_MAP1 = {}
 
 CONTINENT_MAP1 = {
     "Bonaire": "Caribbean",
@@ -154,13 +104,7 @@ CONTINENT_MAP1 = {
     "Tromelin Island": "Africa",
 }
 
-ISO_OVERRIDES1 = {
-    "Bonaire": "BES",
-    "Belize": "BLZ",
-    "Chile": "CHL",
-    "Saint Helena": "SHN",
-    "Jan Mayen": "SJM",
-}
+ISO_OVERRIDES1 = {}
 
 # Dictionnary to complete ISO codes and continents for BCW Analysis
 ISO_MAP2 = {

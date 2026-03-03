@@ -4,3 +4,6 @@
 bash.exe.stackdump
 *trash/
 *tmpclaude*
+*debug_merge*
+eez_*
+inland_*

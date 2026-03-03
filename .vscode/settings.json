@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cd \"c:/Users/aurel/Desktop/M2/Stage ecoseas-csm/CSM/bcw-paper-2025\" && python -c \"\nimport pandas as pd\neez = pd\\.read_csv\\('eez_territories\\.csv', nrows=3\\)\ninland = pd\\.read_csv\\('inland_countries\\.csv', nrows=3\\)\nprint\\('EEZ columns:', list\\(eez\\.columns\\)\\)\nprint\\('EEZ UNION sample:', eez\\['UNION'\\]\\.tolist\\(\\) if 'UNION' in eez\\.columns else 'NO UNION COL'\\)\nprint\\(\\)\nprint\\('Inland columns:', list\\(inland\\.columns\\)\\)\nprint\\('Inland NAME sample:', inland\\['NAME'\\]\\.tolist\\(\\) if 'NAME' in inland\\.columns else 'NO NAME COL'\\)\nprint\\('Inland shape:', pd\\.read_csv\\(\\\\\"inland_countries\\.csv\\\\\"\\)\\.shape\\)\nprint\\('EEZ shape:', pd\\.read_csv\\(\\\\\"eez_territories\\.csv\\\\\"\\)\\.shape\\)\n\"\n$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

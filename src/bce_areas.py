@@ -6,6 +6,12 @@ from pathlib import Path
 from typing import List, Dict, Any
 
 from src.utils import safe_mul, safe_sum, median_and_se_nanaware
+from src.config import (
+    EEZ_PATH, SALTMARSHES_PATH, SEAGRASSES_PATH, MANGROVES_PATH,
+    SALTMARSHES_AREA_COL, SEAGRASSES_AREA_COL, MANGROVES_AREA_COL,
+    SELECT_COLS,
+)
+
 
 def import_data(path: str, select: List[str] = None) -> pd.DataFrame:
     """
@@ -23,8 +29,11 @@ def import_data(path: str, select: List[str] = None) -> pd.DataFrame:
     df['concat_identifiers'] = parts[0] + parts[1] + parts[2] + parts[3]
     return df
 
-def group_data(eez: pd.DataFrame, df1: pd.DataFrame, df1_area_col: str, 
-               df2: pd.DataFrame, df2_are_col: str, df3: pd.DataFrame, df3_areal_col: str) -> pd.DataFrame:
+def group_data(
+    eez: pd.DataFrame, df1: pd.DataFrame, df1_area_col: str, 
+    df2: pd.DataFrame, df2_are_col: str, df3: pd.DataFrame, 
+    df3_areal_col: str
+) -> pd.DataFrame:
     """
     This function groups data from multiple DataFrames based on a common identifier.
     - eez : Exclusive Economic Zones (EEZs) dataFrame
@@ -90,19 +99,22 @@ def adjust_data(df: pd.DataFrame, area_cols: List[str]) -> pd.DataFrame:
 
     return df
 
-def generate_bce_data(eez_path: str, 
-                      mangroves_path: str, mangroves_area_col: str,
-                      saltmarshes_path: str, saltmarshes_area_col: str,
-                      seagrasses_path: str, seagrasses_area_col: str, select: List[str]) -> pd.DataFrame:
+def generate_bce_data(
+    eez_path: str = EEZ_PATH, mangroves_path: str = MANGROVES_PATH, mangroves_area_col: str = MANGROVES_AREA_COL,
+    saltmarshes_path: str = SALTMARSHES_PATH, saltmarshes_area_col: str = SALTMARSHES_AREA_COL,
+    seagrasses_path: str = SEAGRASSES_PATH, seagrasses_area_col: str = SEAGRASSES_AREA_COL, 
+    select: List[str] = SELECT_COLS
+) -> pd.DataFrame:
     """
-    This function generates a DataFrame containing BCE areas by EEZs.
-    - eez_path : Path to the EEZ data file
-    - mangroves_path : Path to the Mangroves data file
-    - mangroves_area_col : Column name for Mangroves area
-    - saltmarshes_path : Path to the Saltmarshes data file
-    - saltmarshes_area_col : Column name for Saltmarshes area
-    - seagrasses_path : Path to the Seagrasses data file
-    - seagrasses_area_col : Column name for Seagrasses area
+    This function generates a DataFrame of BCE areas by country EEZ.
+        - eez_path             : Path to the EEZ data file
+        - mangroves_path       : Path to the Mangroves data file
+        - mangroves_area_col   : Column name for Mangroves area
+        - saltmarshes_path     : Path to the Saltmarshes data file
+        - saltmarshes_area_col : Column name for Saltmarshes area
+        - seagrasses_path      : Path to the Seagrasses data file
+        - seagrasses_area_col  : Column name for Seagrasses area
+        - select               : List of country territorial identifiers column names
     """
     # importing the data
     eez = import_data(eez_path, select + ['a'])
@@ -111,9 +123,11 @@ def generate_bce_data(eez_path: str,
     seagrasses = import_data(seagrasses_path, select + [seagrasses_area_col])
     
     # merging the data
-    bce_df = group_data(eez, mangroves, mangroves_area_col,
-                        saltmarshes, saltmarshes_area_col,
-                        seagrasses, seagrasses_area_col)
+    bce_df = group_data(
+        eez, mangroves, mangroves_area_col,
+        saltmarshes, saltmarshes_area_col,
+        seagrasses, seagrasses_area_col
+    )
     
     # adjusting the data
     bce_df = adjust_data(bce_df, [mangroves_area_col, saltmarshes_area_col, seagrasses_area_col])
@@ -292,7 +306,7 @@ if __name__ == "__main__":
     from src.config import (
         EEZ_PATH, SALTMARSHES_PATH, SEAGRASSES_PATH, MANGROVES_PATH, 
         SELECT_COLS, SALTMARSHES_AREA_COL, SEAGRASSES_AREA_COL,
-        MANGROVES_AREA_COL, JSON_PATH, SEED_LIGHT
+        MANGROVES_AREA_COL, JSON_PATH, SEED_LIGHT, B_LIGHT
     )
     
     bce_df = generate_bce_data(
@@ -306,7 +320,7 @@ if __name__ == "__main__":
     # Compute BCEs sequestration rates
     bce_columns = [SALTMARSHES_AREA_COL, SEAGRASSES_AREA_COL, MANGROVES_AREA_COL]
     bce_df, draws = compute_uptakes(
-        bce_df, JSON_PATH, B=200000, 
+        bce_df, JSON_PATH, B=B_LIGHT, 
         bce_columns=bce_columns, seed=SEED_LIGHT,
         keep_draws=True, quantiles=None
     )

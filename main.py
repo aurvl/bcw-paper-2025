@@ -1,6 +1,5 @@
 from src.config import (
-    EEZ_PATH, SALTMARSHES_PATH, SEAGRASSES_PATH, MANGROVES_PATH, 
-    SELECT_COLS, SALTMARSHES_AREA_COL, SEAGRASSES_AREA_COL, CMOL,
+    CMOL, SALTMARSHES_AREA_COL, SEAGRASSES_AREA_COL,
     MANGROVES_AREA_COL, JSON_PATH, GROUP_PATH, POP_PATH, GDP_PATH, 
     CB_PATH, DEBT_PATH, BCP_PATH, CSCC_CSV, B_LIGHT, SEED_LIGHT,
     OUTPUT_DIR, ISO_MAP2, CONTINENT_MAP2, ISO_OVERRIDES2,
@@ -14,7 +13,7 @@ from src.utils import (
     audit_missingness, correct_kiribati, 
     per_capita
 )
-from src.eda_utils import complete_iso_and_continent
+from src.visualization import complete_iso_and_continent
 
 import numpy as np
 from tabulate import tabulate
@@ -27,10 +26,7 @@ DEBUG_AUDIT = False
 # PREPARING THE DATA
 # ==========================
 # BCEs areas by EEZs
-bce_areas_df = generate_bce_data(EEZ_PATH,
-                                 SALTMARSHES_PATH, SALTMARSHES_AREA_COL,
-                                 SEAGRASSES_PATH, SEAGRASSES_AREA_COL, 
-                                 MANGROVES_PATH, MANGROVES_AREA_COL, SELECT_COLS)
+bce_areas_df = generate_bce_data() # This function load the
 
 area_cols = [SALTMARSHES_AREA_COL, SEAGRASSES_AREA_COL, MANGROVES_AREA_COL]
 if DEBUG_AUDIT:
@@ -98,6 +94,8 @@ if DEBUG_AUDIT:
         ],
         "after_correct_kiribati",
     )
+
+bce_df = bce_df.drop(columns=['uptake_total_partial'])
 path = SUMMARY_DIR / 'bce_data.csv'
 bce_df.to_csv(path, index=False)
 

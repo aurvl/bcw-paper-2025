@@ -1,0 +1,2293 @@
+{
+  "Abu musa, Greater and Lesser Tunb": {
+    "match": "United Arab Emirates",
+    "score_fuzzy": 0.5422,
+    "score_minilm": 0.4833,
+    "combined_f": 0.4409,
+    "combined_m": 0.3206,
+    "match_fuzzy": "United Arab Emirates",
+    "match_minilm": "Niger",
+    "arbitrated": true
+  },
+  "Afghanistan": {
+    "match": "Afghanistan",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Alaska": {
+    "match": "Alaska",
+    "score_fuzzy": 0.4891,
+    "score_minilm": 0.641,
+    "combined_f": 0.3779,
+    "combined_m": 0.4038,
+    "match_fuzzy": "Greenland",
+    "match_minilm": "Russia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Albania": {
+    "match": "Albania",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Algeria": {
+    "match": "Algeria",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Alhucemas Islands": {
+    "match": "Spain",
+    "score_fuzzy": 0.5149,
+    "score_minilm": 0.5842,
+    "combined_f": 0.4658,
+    "combined_m": 0.5514,
+    "match_fuzzy": "Bahamas",
+    "match_minilm": "Somaliland",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "American Samoa": {
+    "match": "American Samoa",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Amsterdam and Saint Paul Islands": {
+    "match": "France",
+    "score_fuzzy": 0.5224,
+    "score_minilm": 0.5479,
+    "combined_f": 0.4472,
+    "combined_m": 0.3902,
+    "match_fuzzy": "Netherlands",
+    "match_minilm": "Isle of Man",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Andaman and Nicobar": {
+    "match": "India",
+    "score_fuzzy": 0.465,
+    "score_minilm": 0.3771,
+    "combined_f": 0.3158,
+    "combined_m": 0.3039,
+    "match_fuzzy": "Palau",
+    "match_minilm": "Vanuatu",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Andorra": {
+    "match": "Andorra",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Angola": {
+    "match": "Angola",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Anguilla": {
+    "match": "Anguilla",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Antarctica": {
+    "match": "Antarctica",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Antigua and Barbuda": {
+    "match": "Antigua and Barb.",
+    "score_fuzzy": 0.839,
+    "score_minilm": 0.9269,
+    "arbitrated": false
+  },
+  "Argentina": {
+    "match": "Argentina",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Armenia": {
+    "match": "Armenia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Aruba": {
+    "match": "Aruba",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Ascension": {
+    "match": "Saint Helena",
+    "score_fuzzy": 0.4305,
+    "score_minilm": 0.3848,
+    "combined_f": 0.3581,
+    "combined_m": 0.2693,
+    "match_fuzzy": "Saint Helena",
+    "match_minilm": "Fiji",
+    "arbitrated": true
+  },
+  "Australia": {
+    "match": "Australia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Austria": {
+    "match": "Austria",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Azerbaijan": {
+    "match": "Azerbaijan",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Azores": {
+    "match": "Portugal",
+    "score_fuzzy": 0.5981,
+    "score_minilm": 0.5909,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "Bahamas": {
+    "match": "Bahamas",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Bahrain": {
+    "match": "Bahrain",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Bajo Nuevo Bank": {
+    "match": "Bajo Nuevo Bank",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Bangladesh": {
+    "match": "Bangladesh",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Barbados": {
+    "match": "Barbados",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Bassas da India": {
+    "match": "France",
+    "score_fuzzy": 0.4957,
+    "score_minilm": 0.5456,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "Belarus": {
+    "match": "Belarus",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Belgium": {
+    "match": "Belgium",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Belize": {
+    "match": "Belize",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Benin": {
+    "match": "Benin",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Bermuda": {
+    "match": "Bermuda",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Bhutan": {
+    "match": "Bhutan",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Bolivia": {
+    "match": "Bolivia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Bonaire": {
+    "match": "Netherlands",
+    "score_fuzzy": 0.5383,
+    "score_minilm": 0.4464,
+    "combined_f": 0.5192,
+    "combined_m": 0.4899,
+    "match_fuzzy": "Gabon",
+    "match_minilm": "Baikonur",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Bosnia and Herzegovina": {
+    "match": "Bosnia and Herz.",
+    "score_fuzzy": 0.8051,
+    "score_minilm": 0.8635,
+    "arbitrated": false
+  },
+  "Botswana": {
+    "match": "Botswana",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Bouvet": {
+    "match": "Norway",
+    "score_fuzzy": 0.3488,
+    "score_minilm": 0.382,
+    "combined_f": 0.2577,
+    "combined_m": 0.3785,
+    "match_fuzzy": "France",
+    "match_minilm": "Montserrat",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Brazil": {
+    "match": "Brazil",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "British Virgin Islands": {
+    "match": "British Virgin Is.",
+    "score_fuzzy": 0.7203,
+    "score_minilm": 0.6118,
+    "arbitrated": false
+  },
+  "Brunei": {
+    "match": "Brunei",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Bulgaria": {
+    "match": "Bulgaria",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Burkina Faso": {
+    "match": "Burkina Faso",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Burundi": {
+    "match": "Burundi",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Cambodia": {
+    "match": "Cambodia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Cameroon": {
+    "match": "Cameroon",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Canada": {
+    "match": "Canada",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Canary Islands": {
+    "match": "Spain",
+    "score_fuzzy": 0.5276,
+    "score_minilm": 0.6012,
+    "combined_f": 0.4638,
+    "combined_m": 0.3806,
+    "match_fuzzy": "Isle of Man",
+    "match_minilm": "Saint Lucia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Cape Verde": {
+    "match": "Cabo Verde",
+    "score_fuzzy": 0.6498,
+    "score_minilm": 0.7215,
+    "arbitrated": false
+  },
+  "Cayman Islands": {
+    "match": "Cayman Is.",
+    "score_fuzzy": 0.8171,
+    "score_minilm": 0.7849,
+    "arbitrated": false
+  },
+  "Central African Republic": {
+    "match": "Central African Rep.",
+    "score_fuzzy": 0.7513,
+    "score_minilm": 0.7479,
+    "arbitrated": false
+  },
+  "Ceuta": {
+    "match": "Spain",
+    "score_fuzzy": 0.4512,
+    "score_minilm": 0.3999,
+    "combined_f": 0.4756,
+    "combined_m": 0.2999,
+    "match_fuzzy": "Curaçao",
+    "match_minilm": "Gabon",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Chad": {
+    "match": "Chad",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Chafarinas Islands": {
+    "match": "Spain",
+    "score_fuzzy": 0.5568,
+    "score_minilm": 0.4976,
+    "combined_f": 0.3107,
+    "combined_m": 0.3664,
+    "match_fuzzy": "Fr. Polynesia",
+    "match_minilm": "Scarborough Reef",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Chagos Archipelago": {
+    "match": "United Kingdom",
+    "score_fuzzy": 0.4938,
+    "score_minilm": 0.5534,
+    "combined_f": 0.3378,
+    "combined_m": 0.3967,
+    "match_fuzzy": "Peru",
+    "match_minilm": "Bahamas",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Chile": {
+    "match": "Chile",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "China": {
+    "match": "China",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Christmas Island": {
+    "match": "Australia",
+    "score_fuzzy": 0.5351,
+    "score_minilm": 0.5606,
+    "combined_f": 0.5342,
+    "combined_m": 0.3517,
+    "match_fuzzy": "Norfolk Island",
+    "match_minilm": "Saint Helena",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Clipperton Island": {
+    "match": "Clipperton I.",
+    "score_fuzzy": 0.7236,
+    "score_minilm": 0.7266,
+    "arbitrated": false
+  },
+  "Cocos Islands": {
+    "match": "Australia",
+    "score_fuzzy": 0.5346,
+    "score_minilm": 0.5422,
+    "combined_f": 0.3173,
+    "combined_m": 0.4885,
+    "match_fuzzy": "Bahamas",
+    "match_minilm": "Micronesia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Collectivity of Saint Martin": {
+    "match": "St-Martin",
+    "score_fuzzy": 0.6687,
+    "score_minilm": 0.7056,
+    "arbitrated": false
+  },
+  "Colombia": {
+    "match": "Colombia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Colombian Exclusive Economic Zone (Quitasueño Bank)": {
+    "match": "Colombia",
+    "score_fuzzy": 0.6087,
+    "score_minilm": 0.5602,
+    "arbitrated": false
+  },
+  "Comores": {
+    "match": "Comoros",
+    "score_fuzzy": 0.7025,
+    "score_minilm": 0.8185,
+    "arbitrated": false
+  },
+  "Cook Islands": {
+    "match": "New Zealand",
+    "score_fuzzy": 0.5977,
+    "score_minilm": 0.4985,
+    "combined_f": 0.4189,
+    "combined_m": 0.4093,
+    "match_fuzzy": "Fr. Polynesia",
+    "match_minilm": "New Caledonia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Costa Rica": {
+    "match": "Costa Rica",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Croatia": {
+    "match": "Croatia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Crozet Islands": {
+    "match": "France",
+    "score_fuzzy": 0.4491,
+    "score_minilm": 0.5036,
+    "combined_f": 0.3579,
+    "combined_m": 0.2994,
+    "match_fuzzy": "Scarborough Reef",
+    "match_minilm": "Bahamas",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Cuba": {
+    "match": "Cuba",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Curaçao": {
+    "match": "Curaçao",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Cyprus": {
+    "match": "Cyprus",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Czech Republic": {
+    "match": "Czechia",
+    "score_fuzzy": 0.925,
+    "score_minilm": 0.8009,
+    "arbitrated": false
+  },
+  "Democratic Republic of the Congo": {
+    "match": "Dem. Rep. Congo",
+    "score_fuzzy": 0.8525,
+    "score_minilm": 0.8731,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "Denmark": {
+    "match": "Denmark",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Djibouti": {
+    "match": "Djibouti",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Dominica": {
+    "match": "Dominica",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Dominican Republic": {
+    "match": "Dominican Rep.",
+    "score_fuzzy": 0.7592,
+    "score_minilm": 0.7449,
+    "combined_f": 0.7858,
+    "combined_m": 0.6801,
+    "match_fuzzy": "Dominican Rep.",
+    "match_minilm": "Dominica",
+    "arbitrated": true
+  },
+  "Doumeira Islands": {
+    "match": "Djibouti",
+    "score_fuzzy": 0.4511,
+    "score_minilm": 0.4721,
+    "combined_f": 0.356,
+    "combined_m": 0.3899,
+    "match_fuzzy": "Bahamas",
+    "match_minilm": "Micronesia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "East Timor": {
+    "match": "Timor-Leste",
+    "score_fuzzy": 0.8522,
+    "score_minilm": 0.8417,
+    "arbitrated": false
+  },
+  "Easter Island": {
+    "match": "Chile",
+    "score_fuzzy": 0.6186,
+    "score_minilm": 0.5745,
+    "combined_f": 0.5176,
+    "combined_m": 0.3673,
+    "match_fuzzy": "Isle of Man",
+    "match_minilm": "Saint Helena",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Ecuador": {
+    "match": "Ecuador",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Egypt": {
+    "match": "Egypt",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "El Salvador": {
+    "match": "El Salvador",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Equatorial Guinea": {
+    "match": "Guinea",
+    "score_fuzzy": 0.7095,
+    "score_minilm": 0.8481,
+    "combined_f": 0.5548,
+    "combined_m": 0.6849,
+    "match_fuzzy": "Guinea-Bissau",
+    "match_minilm": "Guinea",
+    "arbitrated": true
+  },
+  "Eritrea": {
+    "match": "Eritrea",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Estonia": {
+    "match": "Estonia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Ethiopia": {
+    "match": "Ethiopia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Europa Island": {
+    "match": "France",
+    "score_fuzzy": 0.5709,
+    "score_minilm": 0.6168,
+    "combined_f": 0.4938,
+    "combined_m": 0.4751,
+    "match_fuzzy": "Isle of Man",
+    "match_minilm": "Malta",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Faeroe": {
+    "match": "Faeroe Is.",
+    "score_fuzzy": 0.9316,
+    "score_minilm": 0.8874,
+    "arbitrated": false
+  },
+  "Falkland Islands": {
+    "match": "Falkland Is.",
+    "score_fuzzy": 0.7941,
+    "score_minilm": 0.8399,
+    "arbitrated": false
+  },
+  "Federal Republic of Somalia": {
+    "match": "Somalia",
+    "score_fuzzy": 0.811,
+    "score_minilm": 0.7675,
+    "arbitrated": false
+  },
+  "Fiji": {
+    "match": "Fiji",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Finland": {
+    "match": "Finland",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "France": {
+    "match": "France",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "French Guiana": {
+    "match": "Guyana",
+    "score_fuzzy": 0.6007,
+    "score_minilm": 0.701,
+    "combined_f": 0.5109,
+    "combined_m": 0.6137,
+    "match_fuzzy": "France",
+    "match_minilm": "Guyana",
+    "arbitrated": true
+  },
+  "French Polynesia": {
+    "match": "Fr. Polynesia",
+    "score_fuzzy": 0.8761,
+    "score_minilm": 0.8809,
+    "arbitrated": false
+  },
+  "Gabon": {
+    "match": "Gabon",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Galapagos": {
+    "match": "Ecuador",
+    "score_fuzzy": 0.4043,
+    "score_minilm": 0.5197,
+    "combined_f": 0.4164,
+    "combined_m": 0.4474,
+    "match_fuzzy": "Palau",
+    "match_minilm": "Jamaica",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Gambia": {
+    "match": "Gambia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Georgia": {
+    "match": "Georgia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Germany": {
+    "match": "Germany",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Ghana": {
+    "match": "Ghana",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Gibraltar": {
+    "match": "Gibraltar",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Gilbert Islands": {
+    "match": "Kiribati",
+    "score_fuzzy": 0.5757,
+    "score_minilm": 0.5964,
+    "combined_f": 0.4802,
+    "combined_m": 0.4582,
+    "match_fuzzy": "Isle of Man",
+    "match_minilm": "Micronesia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Glorioso Islands": {
+    "match": "France",
+    "score_fuzzy": 0.5032,
+    "score_minilm": 0.516,
+    "combined_f": 0.4183,
+    "combined_m": 0.3691,
+    "match_fuzzy": "Anguilla",
+    "match_minilm": "Saint Lucia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Grand Duchy of Luxembourg": {
+    "match": "Luxembourg",
+    "score_fuzzy": 0.7994,
+    "score_minilm": 0.8183,
+    "arbitrated": false
+  },
+  "Greece": {
+    "match": "Greece",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Greenland": {
+    "match": "Greenland",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Grenada": {
+    "match": "Grenada",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Guadeloupe": {
+    "match": "France",
+    "score_fuzzy": 0.6219,
+    "score_minilm": 0.3959,
+    "combined_f": 0.4776,
+    "combined_m": 0.3313,
+    "match_fuzzy": "Anguilla",
+    "match_minilm": "Aruba",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Guam": {
+    "match": "Guam",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Guatemala": {
+    "match": "Guatemala",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Guernsey": {
+    "match": "Guernsey",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Guinea": {
+    "match": "Guinea",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Guinea-Bissau": {
+    "match": "Guinea-Bissau",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Guyana": {
+    "match": "Guyana",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Haiti": {
+    "match": "Haiti",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Hala'ib Triangle": {
+    "match": "Egypt",
+    "score_fuzzy": 0.4485,
+    "score_minilm": 0.3061,
+    "combined_f": 0.4243,
+    "combined_m": 0.3466,
+    "match_fuzzy": "Bir Tawil",
+    "match_minilm": "Serranilla Bank",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Hawaii": {
+    "match": "United States of America",
+    "score_fuzzy": 0.5828,
+    "score_minilm": 0.6764,
+    "combined_f": 0.3823,
+    "combined_m": 0.52,
+    "match_fuzzy": "Tonga",
+    "match_minilm": "Samoa",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Heard and McDonald Islands": {
+    "match": "Australia",
+    "score_fuzzy": 0.5001,
+    "score_minilm": 0.6428,
+    "combined_f": 0.3852,
+    "combined_m": 0.7332,
+    "match_fuzzy": "Isle of Man",
+    "match_minilm": "Heard I. and McDonald Is.",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Honduras": {
+    "match": "Honduras",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Howland and Baker islands": {
+    "match": "United States of America",
+    "score_fuzzy": 0.4452,
+    "score_minilm": 0.5331,
+    "combined_f": 0.3402,
+    "combined_m": 0.523,
+    "match_fuzzy": "Greenland",
+    "match_minilm": "Norfolk Island",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Hungary": {
+    "match": "Hungary",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Iceland": {
+    "match": "Iceland",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "India": {
+    "match": "India",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Indonesia": {
+    "match": "Indonesia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Iran": {
+    "match": "Iran",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Iraq": {
+    "match": "Iraq",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Ireland": {
+    "match": "Ireland",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Islas San Félix and San Ambrosio": {
+    "match": "Chile",
+    "score_fuzzy": 0.4887,
+    "score_minilm": 0.5011,
+    "combined_f": 0.411,
+    "combined_m": 0.4133,
+    "match_fuzzy": "San Marino",
+    "match_minilm": "Saint Lucia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Isle of Man": {
+    "match": "Isle of Man",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Israel": {
+    "match": "Israel",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Italy": {
+    "match": "Italy",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Ivory Coast": {
+    "match": "Côte d'Ivoire",
+    "score_fuzzy": 0.7338,
+    "score_minilm": 0.7285,
+    "combined_f": 0.5336,
+    "combined_m": 0.4198,
+    "match_fuzzy": "Côte d'Ivoire",
+    "match_minilm": "Senegal",
+    "arbitrated": true
+  },
+  "Jamaica": {
+    "match": "Jamaica",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Jan Mayen": {
+    "match": "Norway",
+    "score_fuzzy": 0.2699,
+    "score_minilm": 0.3698,
+    "combined_f": 0.2302,
+    "combined_m": 0.2474,
+    "match_fuzzy": "Marshall Is.",
+    "match_minilm": "Liberia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Japan": {
+    "match": "Japan",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Jarvis Island": {
+    "match": "United States of America",
+    "score_fuzzy": 0.5556,
+    "score_minilm": 0.5489,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "Jersey": {
+    "match": "Jersey",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Johnston Atoll": {
+    "match": "United States of America",
+    "score_fuzzy": 0.6069,
+    "score_minilm": 0.5389,
+    "combined_f": 0.4087,
+    "combined_m": 0.3149,
+    "match_fuzzy": "Samoa",
+    "match_minilm": "Maldives",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Joint regime area Torres Strait Treaty: Papua New Guinea / Australia": {
+    "match": null,
+    "score_fuzzy": 0.7119,
+    "score_minilm": 0.6361,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Barbados / Guyana": {
+    "match": null,
+    "score_fuzzy": 0.6717,
+    "score_minilm": 0.6582,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Costa Rica / Ecuador (Galapagos)": {
+    "match": null,
+    "score_fuzzy": 0.6398,
+    "score_minilm": 0.587,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Croatia / Slovenia": {
+    "match": null,
+    "score_fuzzy": 0.6738,
+    "score_minilm": 0.6061,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Dominican Republic / Colombia": {
+    "match": null,
+    "score_fuzzy": 0.6422,
+    "score_minilm": 0.639,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Ecuador / Colombia": {
+    "match": null,
+    "score_fuzzy": 0.6708,
+    "score_minilm": 0.6642,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: France / Italy": {
+    "match": null,
+    "score_fuzzy": 0.5972,
+    "score_minilm": 0.5513,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Honduras / United Kingdom (Cayman Islands)": {
+    "match": null,
+    "score_fuzzy": 0.634,
+    "score_minilm": 0.5805,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Iceland / Denmark (Faeroe Islands)": {
+    "match": null,
+    "score_fuzzy": 0.6485,
+    "score_minilm": 0.6103,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Iceland / Norway (Jan Mayen)": {
+    "match": null,
+    "score_fuzzy": 0.6871,
+    "score_minilm": 0.5792,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Jamaica / Colombia": {
+    "match": null,
+    "score_fuzzy": 0.5993,
+    "score_minilm": 0.6435,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Norway / Russia": {
+    "match": null,
+    "score_fuzzy": 0.6216,
+    "score_minilm": 0.5856,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Peru / Ecuador": {
+    "match": null,
+    "score_fuzzy": 0.6636,
+    "score_minilm": 0.6376,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Sao Tome and Principe / Nigeria": {
+    "match": null,
+    "score_fuzzy": 0.7202,
+    "score_minilm": 0.6485,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Senegal / Guinea-Bissau": {
+    "match": null,
+    "score_fuzzy": 0.6912,
+    "score_minilm": 0.61,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: South Korea / Japan": {
+    "match": null,
+    "score_fuzzy": 0.6617,
+    "score_minilm": 0.6204,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Spain / France": {
+    "match": null,
+    "score_fuzzy": 0.5547,
+    "score_minilm": 0.5758,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Sweden / Norway": {
+    "match": null,
+    "score_fuzzy": 0.654,
+    "score_minilm": 0.5492,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: United Kingdom / Denmark (Faeroe Islands)": {
+    "match": null,
+    "score_fuzzy": 0.5484,
+    "score_minilm": 0.5153,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: United States / Russia": {
+    "match": null,
+    "score_fuzzy": 0.5693,
+    "score_minilm": 0.5293,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Joint regime area: Uruguay / Argentina": {
+    "match": null,
+    "score_fuzzy": 0.6314,
+    "score_minilm": 0.6646,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Jordan": {
+    "match": "Jordan",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Juan de Nova Island": {
+    "match": "France",
+    "score_fuzzy": 0.6598,
+    "score_minilm": 0.5909,
+    "combined_f": 0.4299,
+    "combined_m": 0.3621,
+    "match_fuzzy": "Puerto Rico",
+    "match_minilm": "Saint Lucia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Kazakhstan": {
+    "match": "Kazakhstan",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Kenya": {
+    "match": "Kenya",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Kerguélen": {
+    "match": "France",
+    "score_fuzzy": 0.391,
+    "score_minilm": 0.4455,
+    "combined_f": 0.383,
+    "combined_m": 0.4103,
+    "match_fuzzy": "Germany",
+    "match_minilm": "Belgium",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Kuril Islands": {
+    "match": "Russia",
+    "score_fuzzy": 0.5199,
+    "score_minilm": 0.5112,
+    "combined_f": 0.4504,
+    "combined_m": 0.386,
+    "match_fuzzy": "Kiribati",
+    "match_minilm": "Micronesia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Kuwait": {
+    "match": "Kuwait",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Kyrgyzstan": {
+    "match": "Kyrgyzstan",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Laos": {
+    "match": "Laos",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Latvia": {
+    "match": "Latvia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Lebanon": {
+    "match": "Lebanon",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Lesotho": {
+    "match": "Lesotho",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Liberia": {
+    "match": "Liberia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Libya": {
+    "match": "Libya",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Liechtenstein": {
+    "match": "Liechtenstein",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Line Group": {
+    "match": "Kiribati",
+    "score_fuzzy": 0.2732,
+    "score_minilm": 0.2154,
+    "combined_f": 0.2419,
+    "combined_m": 0.1744,
+    "match_fuzzy": "Gibraltar",
+    "match_minilm": "Italy",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Lithuania": {
+    "match": "Lithuania",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Macedonia": {
+    "match": "North Macedonia",
+    "score_fuzzy": 0.8548,
+    "score_minilm": 0.9185,
+    "arbitrated": false
+  },
+  "Macquarie Island": {
+    "match": "Australia",
+    "score_fuzzy": 0.5958,
+    "score_minilm": 0.4955,
+    "combined_f": 0.4979,
+    "combined_m": 0.3167,
+    "match_fuzzy": "Australia",
+    "match_minilm": "New Caledonia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Madagascar": {
+    "match": "Madagascar",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Madeira": {
+    "match": "Portugal",
+    "score_fuzzy": 0.5457,
+    "score_minilm": 0.5443,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "Malawi": {
+    "match": "Malawi",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Malaysia": {
+    "match": "Malaysia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Maldives": {
+    "match": "Maldives",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Mali": {
+    "match": "Mali",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Malta": {
+    "match": "Malta",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Marshall Islands": {
+    "match": "Marshall Is.",
+    "score_fuzzy": 0.599,
+    "score_minilm": 0.5763,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "Martinique": {
+    "match": "France",
+    "score_fuzzy": 0.6376,
+    "score_minilm": 0.6631,
+    "combined_f": 0.3776,
+    "combined_m": 0.4427,
+    "match_fuzzy": "Grenada",
+    "match_minilm": "Barbados",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Matthew and Hunter Islands": {
+    "match": "France",
+    "score_fuzzy": 0.5694,
+    "score_minilm": 0.4466,
+    "combined_f": 0.4198,
+    "combined_m": 0.4483,
+    "match_fuzzy": "Isle of Man",
+    "match_minilm": "Norfolk Island",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Mauritania": {
+    "match": "Mauritania",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Mayotte": {
+    "match": "France",
+    "score_fuzzy": 0.3842,
+    "score_minilm": 0.4143,
+    "combined_f": 0.3588,
+    "combined_m": 0.2738,
+    "match_fuzzy": "Haiti",
+    "match_minilm": "Dhekelia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Melilla": {
+    "match": "Spain",
+    "score_fuzzy": 0.3812,
+    "score_minilm": 0.4083,
+    "combined_f": 0.3781,
+    "combined_m": 0.4708,
+    "match_fuzzy": "Venezuela",
+    "match_minilm": "Anguilla",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Mexico": {
+    "match": "Mexico",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Micronesia": {
+    "match": "Micronesia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Moldova": {
+    "match": "Moldova",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Monaco": {
+    "match": "Monaco",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Mongolia": {
+    "match": "Mongolia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Montenegro": {
+    "match": "Montenegro",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Montserrat": {
+    "match": "Montserrat",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Morocco": {
+    "match": "Morocco",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Mozambique": {
+    "match": "Mozambique",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Myanmar": {
+    "match": "Myanmar",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Namibia": {
+    "match": "Namibia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Nauru": {
+    "match": "Nauru",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Navassa Island": {
+    "match": "United States of America",
+    "score_fuzzy": 0.6377,
+    "score_minilm": 0.6199,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "Nepal": {
+    "match": "Nepal",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Netherlands": {
+    "match": "Netherlands",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "New Caledonia": {
+    "match": "New Caledonia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "New Zealand": {
+    "match": "New Zealand",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Nicaragua": {
+    "match": "Nicaragua",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Niger": {
+    "match": "Niger",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Nigeria": {
+    "match": "Nigeria",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Niue": {
+    "match": "Niue",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Norfolk Island": {
+    "match": "Norfolk Island",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "North Korea": {
+    "match": "North Korea",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Northern Mariana Islands": {
+    "match": "N. Mariana Is.",
+    "score_fuzzy": 0.7367,
+    "score_minilm": 0.6464,
+    "arbitrated": false
+  },
+  "Norway": {
+    "match": "Norway",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Oecusse": {
+    "match": "Timor-Leste",
+    "score_fuzzy": 0.3562,
+    "score_minilm": 0.3968,
+    "combined_f": 0.3546,
+    "combined_m": 0.3317,
+    "match_fuzzy": "Eq. Guinea",
+    "match_minilm": "Dhekelia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Oman": {
+    "match": "Oman",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Overlapping claim Liancourt Rocks: Japan / South Korea": {
+    "match": null,
+    "score_fuzzy": 0.4292,
+    "score_minilm": 0.4457,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Overlapping claim South China Sea": {
+    "match": null,
+    "score_fuzzy": 0.4148,
+    "score_minilm": 0.4022,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Overlapping claim: Canada / United States": {
+    "match": null,
+    "score_fuzzy": 0.602,
+    "score_minilm": 0.464,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Overlapping claim: Colombia / Dominican Republic / Venezuela": {
+    "match": null,
+    "score_fuzzy": 0.61,
+    "score_minilm": 0.6267,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Overlapping claim: Egypt / Libya": {
+    "match": null,
+    "score_fuzzy": 0.6789,
+    "score_minilm": 0.6805,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Overlapping claim: Guyana / Trinidad and Tobago / Venezuela": {
+    "match": null,
+    "score_fuzzy": 0.661,
+    "score_minilm": 0.6515,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Overlapping claim: Iraq / Iran": {
+    "match": null,
+    "score_fuzzy": 0.5782,
+    "score_minilm": 0.5549,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Overlapping claim: Malaysia / Singapore": {
+    "match": null,
+    "score_fuzzy": 0.6059,
+    "score_minilm": 0.633,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Overlapping claim: Qatar / Saudi Arabia / United Arab Emirates": {
+    "match": null,
+    "score_fuzzy": 0.6794,
+    "score_minilm": 0.6726,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Overlapping claim: United States (Puerto Rico) / Dominican Republic": {
+    "match": null,
+    "score_fuzzy": 0.6116,
+    "score_minilm": 0.6167,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Overlapping claim: Venezuela / Netherlands (Aruba) / Dominican Republic": {
+    "match": null,
+    "score_fuzzy": 0.5682,
+    "score_minilm": 0.543,
+    "skip": true,
+    "note": "joint regime or overlapping claim — no single sovereign"
+  },
+  "Pakistan": {
+    "match": "Pakistan",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Palau": {
+    "match": "Palau",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Palestine": {
+    "match": "Palestine",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Palmyra Atoll": {
+    "match": "United States of America",
+    "score_fuzzy": 0.4866,
+    "score_minilm": 0.6134,
+    "combined_f": 0.3971,
+    "combined_m": 0.4567,
+    "match_fuzzy": "Coral Sea Is.",
+    "match_minilm": "Bahamas",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Panama": {
+    "match": "Panama",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Papua New Guinea": {
+    "match": "Papua New Guinea",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Paraguay": {
+    "match": "Paraguay",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Perejil Island": {
+    "match": "Spain",
+    "score_fuzzy": 0.4598,
+    "score_minilm": 0.5212,
+    "combined_f": 0.2966,
+    "combined_m": 0.376,
+    "match_fuzzy": "Scarborough Reef",
+    "match_minilm": "Saint Helena",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Peru": {
+    "match": "Peru",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Peñón de Vélez de la Gomera": {
+    "match": "Spain",
+    "score_fuzzy": 0.5292,
+    "score_minilm": 0.4295,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "Philippines": {
+    "match": "Philippines",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Phoenix Group": {
+    "match": "Kiribati",
+    "score_fuzzy": 0.3083,
+    "score_minilm": 0.3473,
+    "combined_f": 0.1542,
+    "combined_m": 0.2606,
+    "match_fuzzy": "Malta",
+    "match_minilm": "Azerbaijan",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Pitcairn": {
+    "match": "Pitcairn Is.",
+    "score_fuzzy": 0.9509,
+    "score_minilm": 0.8639,
+    "arbitrated": false
+  },
+  "Poland": {
+    "match": "Poland",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Portugal": {
+    "match": "Portugal",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Prince Edward Islands": {
+    "match": "South Africa",
+    "score_fuzzy": 0.5655,
+    "score_minilm": 0.5597,
+    "combined_f": 0.439,
+    "combined_m": 0.4048,
+    "match_fuzzy": "Isle of Man",
+    "match_minilm": "Saint Lucia",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Puerto Rico": {
+    "match": "Puerto Rico",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Qatar": {
+    "match": "Qatar",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Republic of Mauritius": {
+    "match": "Mauritius",
+    "score_fuzzy": 0.8321,
+    "score_minilm": 0.9007,
+    "arbitrated": false
+  },
+  "Republic of the Congo": {
+    "match": "Congo",
+    "score_fuzzy": 0.8689,
+    "score_minilm": 0.9027,
+    "arbitrated": false
+  },
+  "Romania": {
+    "match": "Romania",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Russia": {
+    "match": "Russia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Rwanda": {
+    "match": "Rwanda",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Réunion": {
+    "match": "France",
+    "score_fuzzy": 0.3051,
+    "score_minilm": 0.372,
+    "combined_f": 0.2859,
+    "combined_m": 0.2629,
+    "match_fuzzy": "Guernsey",
+    "match_minilm": "Jersey",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Saba": {
+    "match": "Netherlands",
+    "score_fuzzy": 0.4098,
+    "score_minilm": 0.5372,
+    "combined_f": 0.4271,
+    "combined_m": 0.4561,
+    "match_fuzzy": "Sudan",
+    "match_minilm": "South Africa",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Saint Helena": {
+    "match": "Saint Helena",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Saint Kitts and Nevis": {
+    "match": "St. Kitts and Nevis",
+    "score_fuzzy": 0.9829,
+    "score_minilm": 0.8994,
+    "arbitrated": false
+  },
+  "Saint Lucia": {
+    "match": "Saint Lucia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Saint Vincent and the Grenadines": {
+    "match": "St. Vin. and Gren.",
+    "score_fuzzy": 0.6035,
+    "score_minilm": 0.6188,
+    "combined_f": 0.4878,
+    "combined_m": 0.6094,
+    "match_fuzzy": "Saint Lucia",
+    "match_minilm": "St. Vin. and Gren.",
+    "arbitrated": true
+  },
+  "Saint-Barthélemy": {
+    "match": "St-Barthélemy",
+    "score_fuzzy": 0.9554,
+    "score_minilm": 0.9239,
+    "arbitrated": false
+  },
+  "Saint-Pierre and Miquelon": {
+    "match": "St. Pierre and Miquelon",
+    "score_fuzzy": 0.9775,
+    "score_minilm": 0.953,
+    "arbitrated": false
+  },
+  "Samoa": {
+    "match": "Samoa",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "San Marino": {
+    "match": "San Marino",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Sao Tome and Principe": {
+    "match": "São Tomé and Principe",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Sapodilla Cayes": {
+    "match": "Cabo Verde",
+    "score_fuzzy": 0.3422,
+    "score_minilm": 0.494,
+    "arbitrated": false
+  },
+  "Saudi Arabia": {
+    "match": "Saudi Arabia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Senegal": {
+    "match": "Senegal",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Senkaku Islands": {
+    "match": "Japan",
+    "score_fuzzy": 0.5256,
+    "score_minilm": 0.5265,
+    "combined_f": 0.3342,
+    "combined_m": 0.3159,
+    "match_fuzzy": "Fr. Polynesia",
+    "match_minilm": "Fiji",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Serbia": {
+    "match": "Serbia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Serrana Bank": {
+    "match": "Colombia",
+    "score_fuzzy": 0.8801,
+    "score_minilm": 0.9153,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "Serranilla Bank": {
+    "match": "Serranilla Bank",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Seychelles": {
+    "match": "Seychelles",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Sierra Leone": {
+    "match": "Sierra Leone",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Singapore": {
+    "match": "Singapore",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Sint-Eustatius": {
+    "match": "Netherlands",
+    "score_fuzzy": 0.5214,
+    "score_minilm": 0.5413,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "Sint-Maarten": {
+    "match": "Sint Maarten",
+    "score_fuzzy": 0.9702,
+    "score_minilm": 0.9368,
+    "arbitrated": false
+  },
+  "Slovakia": {
+    "match": "Slovakia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Slovenia": {
+    "match": "Slovenia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Solomon Islands": {
+    "match": "Solomon Is.",
+    "score_fuzzy": 0.5788,
+    "score_minilm": 0.6396,
+    "combined_f": 0.5068,
+    "combined_m": 0.3724,
+    "match_fuzzy": "Dominica",
+    "match_minilm": "Fiji",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "South Africa": {
+    "match": "South Africa",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "South Georgia and the South Sandwich Islands": {
+    "match": "United Kingdom",
+    "score_fuzzy": 0.6189,
+    "score_minilm": 0.5944,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "South Korea": {
+    "match": "South Korea",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "South Sudan": {
+    "match": "S. Sudan",
+    "score_fuzzy": 0.8519,
+    "score_minilm": 0.8964,
+    "combined_f": 0.7944,
+    "combined_m": 0.7607,
+    "match_fuzzy": "S. Sudan",
+    "match_minilm": "Sudan",
+    "arbitrated": true
+  },
+  "Spain": {
+    "match": "Spain",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Sri Lanka": {
+    "match": "Sri Lanka",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Sudan": {
+    "match": "Sudan",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Suriname": {
+    "match": "Suriname",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Svalbard": {
+    "match": "Norway",
+    "score_fuzzy": 0.5576,
+    "score_minilm": 0.633,
+    "combined_f": 0.4121,
+    "combined_m": 0.4594,
+    "match_fuzzy": "Iceland",
+    "match_minilm": "Sweden",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Swaziland": {
+    "match": "eSwatini",
+    "score_fuzzy": 0.5965,
+    "score_minilm": 0.6104,
+    "combined_f": 0.4983,
+    "combined_m": 0.5719,
+    "match_fuzzy": "Zambia",
+    "match_minilm": "Poland",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Sweden": {
+    "match": "Sweden",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Switzerland": {
+    "match": "Switzerland",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Syria": {
+    "match": "Syria",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Taiwan": {
+    "match": "Taiwan",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Tajikistan": {
+    "match": "Tajikistan",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Tanzania": {
+    "match": "Tanzania",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Thailand": {
+    "match": "Thailand",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Togo": {
+    "match": "Togo",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Tokelau": {
+    "match": "New Zealand",
+    "score_fuzzy": 0.4418,
+    "score_minilm": 0.5514,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "Tonga": {
+    "match": "Tonga",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Trinidad and Tobago": {
+    "match": "Trinidad and Tobago",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Trinidade": {
+    "match": "Trinidad and Tobago",
+    "score_fuzzy": 0.8092,
+    "score_minilm": 0.8409,
+    "arbitrated": false
+  },
+  "Tristan Da Cunha": {
+    "match": "Saint Helena",
+    "score_fuzzy": 0.5173,
+    "score_minilm": 0.4759,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "Tromelin Island": {
+    "match": "France",
+    "score_fuzzy": 0.5682,
+    "score_minilm": 0.5115,
+    "combined_f": 0.6289,
+    "combined_m": 0.3467,
+    "match_fuzzy": "Norfolk Island",
+    "match_minilm": "Bahamas",
+    "arbitrated": true,
+    "manual_correction": true
+  },
+  "Tunisia": {
+    "match": "Tunisia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Turkey": {
+    "match": "Turkey",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Turkmenistan": {
+    "match": "Turkmenistan",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Turks and Caicos Islands": {
+    "match": "Turks and Caicos Is.",
+    "score_fuzzy": 0.8753,
+    "score_minilm": 0.8436,
+    "arbitrated": false
+  },
+  "Tuvalu": {
+    "match": "Tuvalu",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Uganda": {
+    "match": "Uganda",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Ukraine": {
+    "match": "Ukraine",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "United Arab Emirates": {
+    "match": "United Arab Emirates",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "United Kingdom": {
+    "match": "United Kingdom",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "United States": {
+    "match": "United States of America",
+    "score_fuzzy": 0.931,
+    "score_minilm": 0.9037,
+    "arbitrated": false
+  },
+  "United States Virgin Islands": {
+    "match": "U.S. Virgin Is.",
+    "score_fuzzy": 0.7224,
+    "score_minilm": 0.5693,
+    "arbitrated": false
+  },
+  "Uruguay": {
+    "match": "Uruguay",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Uzbekistan": {
+    "match": "Uzbekistan",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Vanuatu": {
+    "match": "Vanuatu",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Vatican City": {
+    "match": "Vatican",
+    "score_fuzzy": 0.8347,
+    "score_minilm": 0.906,
+    "arbitrated": false
+  },
+  "Venezuela": {
+    "match": "Venezuela",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Vietnam": {
+    "match": "Vietnam",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Wake Island": {
+    "match": "United States of America",
+    "score_fuzzy": 0.6203,
+    "score_minilm": 0.5539,
+    "arbitrated": false,
+    "manual_correction": true
+  },
+  "Wallis and Futuna": {
+    "match": "Wallis and Futuna Is.",
+    "score_fuzzy": 0.9223,
+    "score_minilm": 0.9165,
+    "arbitrated": false
+  },
+  "Western Sahara": {
+    "match": "W. Sahara",
+    "score_fuzzy": 0.8747,
+    "score_minilm": 0.8315,
+    "arbitrated": false
+  },
+  "Yemen": {
+    "match": "Yemen",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Zambia": {
+    "match": "Zambia",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  },
+  "Zimbabwe": {
+    "match": "Zimbabwe",
+    "score_fuzzy": 1.0,
+    "score_minilm": 1.0,
+    "arbitrated": false
+  }
+}
