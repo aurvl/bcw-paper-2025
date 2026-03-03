@@ -293,6 +293,13 @@ GROUPS_COLORMAP = {
     'LDCs': 'tab:red',
 }
 
+MAP_FIN = {
+    "Source + low debt stress": "#1f77b4",
+    "Source + high debt stress": "#ff7f0e",
+    "Sink + low debt stress": "#2ca02c",
+    "Sink + high debt stress": "#d62728",
+}
+
 def _safe_series(data, col):
     return data.get(col, pd.Series(dtype=float))
 
@@ -1064,6 +1071,130 @@ def mapper_bce(
     )
 
 
+def smart_annotate(ax, texts_data, offset_radius=70, fontsize=10,
+                   arrowstyle="->", connectionstyle="angle3,angleA=0,angleB=-90",
+                   margin=0.04, max_iter=60, repulse_strength=1.4):
+    """
+    Auto-place annotations away from the point cloud centroid,
+    clamp them inside the axes frame, then iteratively push
+    overlapping labels apart.
+
+    Parameters
+    ----------
+    ax               : matplotlib Axes
+    texts_data       : list of (x, y, label)  in data coordinates
+    offset_radius    : initial pixel push away from centroid
+    fontsize         : label font size
+    margin           : axes-fraction margin kept from each edge (clamp)
+    max_iter         : anti-overlap iterations
+    repulse_strength : how hard overlapping labels push each other apart
+    """
+
+    fig = ax.get_figure()
+
+    # ── 1. helpers: data ↔ axes-fraction ─────────────────────────────────────
+    def data_to_ax(x, y):
+        disp = ax.transData.transform((x, y))
+        return ax.transAxes.inverted().transform(disp)
+
+    def ax_to_disp(ax_pt):
+        return ax.transAxes.transform(ax_pt)
+
+    def disp_to_ax(disp_pt):
+        return ax.transAxes.inverted().transform(disp_pt)
+
+    # ── 2. compute centroid in axes-fraction space ────────────────────────────
+    pts_ax = np.array([data_to_ax(x, y) for x, y, _ in texts_data])
+    cx, cy = pts_ax[:, 0].mean(), pts_ax[:, 1].mean()
+
+    # ── 3. initial label positions (push away from centroid) ─────────────────
+    # convert offset_radius (points/px) to axes-fraction units
+    fig_w_px, fig_h_px = fig.get_size_inches() * fig.dpi
+    ax_bbox  = ax.get_position()          # in figure fraction
+    ax_w_px  = ax_bbox.width  * fig_w_px
+    ax_h_px  = ax_bbox.height * fig_h_px
+
+    label_pos = []   # in axes-fraction
+    for i, (x, y, _) in enumerate(texts_data):
+        pt = pts_ax[i]
+        dx, dy = pt[0] - cx, pt[1] - cy
+        norm = np.hypot(dx, dy) or 1e-9
+        dx_n, dy_n = dx / norm, dy / norm
+
+        lx = pt[0] + dx_n * offset_radius / ax_w_px
+        ly = pt[1] + dy_n * offset_radius / ax_h_px
+        label_pos.append([lx, ly])
+
+    label_pos = np.array(label_pos, dtype=float)
+
+    # ── 4. clamp inside [margin, 1-margin] ───────────────────────────────────
+    label_pos[:, 0] = np.clip(label_pos[:, 0], margin, 1 - margin)
+    label_pos[:, 1] = np.clip(label_pos[:, 1], margin, 1 - margin)
+
+    # ── 5. iterative overlap repulsion ───────────────────────────────────────
+    # estimate label size in axes-fraction (rough: chars × avg char width)
+    avg_char_w = fontsize * 0.6 / ax_w_px   # axes-fraction
+    avg_char_h = fontsize * 1.4 / ax_h_px
+
+    for _ in range(max_iter):
+        moved = False
+        for i in range(len(label_pos)):
+            li = label_pos[i]
+            wi = avg_char_w * len(texts_data[i][2])
+            hi = avg_char_h
+
+            for j in range(i + 1, len(label_pos)):
+                lj = label_pos[j]
+                wj = avg_char_w * len(texts_data[j][2])
+                hj = avg_char_h
+
+                # overlap in each axis?
+                gap_x = (wi + wj) / 2
+                gap_y = (hi + hj) / 2
+                dx = li[0] - lj[0]
+                dy = li[1] - lj[1]
+
+                if abs(dx) < gap_x and abs(dy) < gap_y:
+                    # push apart
+                    push_x = (gap_x - abs(dx)) * np.sign(dx or 1) * repulse_strength
+                    push_y = (gap_y - abs(dy)) * np.sign(dy or 1) * repulse_strength
+                    label_pos[i] += [push_x / 2, push_y / 2]
+                    label_pos[j] -= [push_x / 2, push_y / 2]
+                    moved = True
+
+        # re-clamp after each repulsion step
+        label_pos[:, 0] = np.clip(label_pos[:, 0], margin, 1 - margin)
+        label_pos[:, 1] = np.clip(label_pos[:, 1], margin, 1 - margin)
+
+        if not moved:
+            break
+
+    # ── 6. draw annotations ───────────────────────────────────────────────────
+    for i, (x, y, label) in enumerate(texts_data):
+        lx, ly = label_pos[i]
+
+        # convert label pos (axes-fraction) → offset points from data point
+        lx_disp, ly_disp = ax_to_disp((lx, ly))
+        px_disp, py_disp = ax.transData.transform((x, y))
+        ox = lx_disp - px_disp
+        oy = ly_disp - py_disp
+
+        ax.annotate(
+            label,
+            xy=(x, y),
+            xycoords='data',
+            xytext=(ox, oy),
+            textcoords='offset points',
+            fontsize=fontsize,
+            ha='center', va='center',
+            arrowprops=dict(
+                arrowstyle=arrowstyle,
+                connectionstyle=connectionstyle,
+                lw=0.8, color='black'
+            ),
+            bbox=dict(boxstyle='round,pad=0.15', fc='white', alpha=0.0, lw=0),
+        )
+
 
 def map_and_barplot(
     df: pd.DataFrame,
@@ -1075,6 +1206,7 @@ def map_and_barplot(
     subtitle: str,
     xlabel_bar: str,
     labels: list = None,
+    bar: bool = True,
     fig_size_map: tuple = (14, 10),
     fig_size_bar: tuple = (5, 2),
     cmap_palette: str = 'Blues',
@@ -1169,23 +1301,25 @@ def map_and_barplot(
           .dropna()
           .sort_values(by=var, ascending=False)
     )
-    sns.set_theme(style='whitegrid')
-    plt.figure(figsize=fig_size_bar)
-    sns.barplot(
-        data=sq, x=var, y=group_col,
-        palette=cmap_palette, width=0.8,
-        edgecolor="none",
-    )
-    plt.xlabel(xlabel_bar)
-    plt.ylabel('')
-    plt.xscale("log")
-    format_log_axis_plain('x')
-    sns.despine()
-    plt.yticks(fontsize=15)
-    plt.xticks(fontsize=15)
-    plt.grid(True, axis='x', linestyle='--')
-    plt.tight_layout()
-    plt.show()
+    
+    if bar:
+        sns.set_theme(style='whitegrid')
+        plt.figure(figsize=fig_size_bar)
+        sns.barplot(
+            data=sq, x=var, y=group_col,
+            palette=cmap_palette, width=0.8,
+            edgecolor="none",
+        )
+        plt.xlabel(xlabel_bar)
+        plt.ylabel('')
+        plt.xscale("log")
+        format_log_axis_plain('x')
+        sns.despine()
+        plt.yticks(fontsize=15)
+        plt.xticks(fontsize=15)
+        plt.grid(True, axis='x', linestyle='--')
+        plt.tight_layout()
+        plt.show()
 
     # ── 2. Choropleth via mapper_bc ────────────────────────────────────────────
     mapper_bc(
