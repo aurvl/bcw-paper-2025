@@ -367,6 +367,7 @@ def pretty_report(data: pd.DataFrame, dec: int = 2, use_color: bool = True):
         series = get_series(df_col)
         std_v = _to_num(series.std(ddof=1))
         mean_v = _to_num(series.mean())
+        median_v = _to_num(series.median())
         sum_v = _to_num(series.sum())
 
         # get SE for totals from provided mapping if available
@@ -382,6 +383,7 @@ def pretty_report(data: pd.DataFrame, dec: int = 2, use_color: bool = True):
         # formatted strings (values shown WITHOUT units)
         std_str = _fmt_num(std_v / scale) if std_v is not None else _fmt_num(None)
         mean_str = _fmt_num(mean_v / scale) if mean_v is not None else _fmt_num(None)
+        median_str = _fmt_num(median_v / scale) if median_v is not None else _fmt_num(None)
 
         # total: show "val ± SE" if se_total exists, else show val only
         if sum_v is None:
@@ -396,16 +398,18 @@ def pretty_report(data: pd.DataFrame, dec: int = 2, use_color: bool = True):
                 total_str = f"{(sum_v/scale):,.{dec}f}".rjust(VAL_W)
 
         # title centered vertically on the middle line (line index 1)
-        title_lines = ["", disp_title, ""]
-        labels = ["std:", "mean:", "total:"]
+        title_lines = ["", disp_title, "", ""]  # empty lines for padding
+        labels = ["std:", "mean:", "median:", "total:"]
 
-        for i in range(3):
+        for i in range(4):
             left = title_lines[i].ljust(TITLE_W)
             lbl = labels[i].rjust(LBL_W)
             if i == 0:
                 val = std_str
             elif i == 1:
                 val = mean_str
+            elif i == 2:
+                val = median_str
             else:
                 val = total_str
             print(f"{K}{left}{R} {lbl} {V}{val}{R}")
