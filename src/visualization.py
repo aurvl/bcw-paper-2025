@@ -320,7 +320,7 @@ def _fmt_num(v):
     # if too long, keep right-most characters (preserve decimals)
     return s.rjust(VAL_W) if len(s) <= VAL_W else s[-VAL_W:]
 
-def pretty_report(data: pd.DataFrame, use_color: bool = True):
+def pretty_report(data: pd.DataFrame, dec: int = 2, use_color: bool = True):
     """
     Compact 3-col report with exact titles/units:
     - col1: block title with unit in parentheses (e.g. "Coastal BCEs Sequestration (MtC)")
@@ -342,6 +342,8 @@ def pretty_report(data: pd.DataFrame, use_color: bool = True):
 
     # Blocks: (df_col, display_title_with_unit, scale_key, se_source_column_or_None)
     blocks = [
+        ("Area_EEZ_KM2", "Total EEZ Area (km²)", "km²", None),  # no SE for area
+        ("total_bce_area", "Coastal BCEs Area (km²)", "km²", None),  # no SE for area
         ("uptake_total_mean", "Coastal BCEs Sequestration (MtC)", "MtC", "uptake_total_se"),
         ("cBCW", "Coastal BC Wealth (billion US$)", "billion US$", "cBCW_se"),
         ("BCP Seq (tC)", "Blue Carbon Pump Sequestration (GtC)", "GtC", None),  # SE computed below if desired
@@ -356,13 +358,6 @@ def pretty_report(data: pd.DataFrame, use_color: bool = True):
     for key in ["uptake_total_se", "cBCW_se", "oBCW_se", "Total BCseq_se", "Total BCW_se"]:
         arr = _safe_arr(data.get(key, pd.Series(dtype=float)))
         se_cache[key] = float(np.sqrt(np.nansum(arr ** 2))) if arr.size else None
-
-    # special SE for 'BCP Seq (tC)' as earlier (std * sqrt(count)) if present
-    try:
-        bcp_series = _safe_series(data, "BCP Seq (tC)")
-        se_cache["BCP Seq (tC)"] = float(bcp_series.std(ddof=1) * np.sqrt(int(bcp_series.count()))) if getattr(bcp_series, "size", 0) else None
-    except Exception:
-        se_cache["BCP Seq (tC)"] = None
 
     def get_series(col):
         return _safe_series(data, col)
@@ -392,13 +387,13 @@ def pretty_report(data: pd.DataFrame, use_color: bool = True):
         if sum_v is None:
             total_str = _fmt_num(None)
         else:
-            val_display = f"{(sum_v/scale):,.2f}"
+            val_display = f"{(sum_v/scale):,.{dec}f}"
             if se_total is not None:
-                se_display = f"{(se_total/scale):,.2f}"
+                se_display = f"{(se_total/scale):,.{dec}f}"
                 combined = f"{val_display} ± {se_display}"
                 total_str = combined.rjust(VAL_W) if len(combined) <= VAL_W else combined[-VAL_W:]
             else:
-                total_str = f"{(sum_v/scale):,.2f}".rjust(VAL_W)
+                total_str = f"{(sum_v/scale):,.{dec}f}".rjust(VAL_W)
 
         # title centered vertically on the middle line (line index 1)
         title_lines = ["", disp_title, ""]

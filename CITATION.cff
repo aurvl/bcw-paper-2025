@@ -1,8 +1,9 @@
-cff-version: "1.2.0"
+cff-version: 1.2.0
 message: "If you use this repository in your research, please cite it as shown below."
-title: "Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth — Data and Code Repository"
+type: dataset
+title: "Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth - Data and Code Repository"
 version: "1.0"
-date-released: "2025-01-01"
+date-released: 2025-01-01
 authors:
   - family-names: "Hilmi"
     given-names: "Nathalie"
@@ -15,15 +16,20 @@ authors:
   - family-names: "Levin"
     given-names: "Lisa"
 url: "https://github.com/aurvl/bcw-paper-2025"
-repository-code:
-  type: "git"
+preferred-citation:
+  type: data
+  authors:
+    - family-names: "Hilmi"
+      given-names: "Nathalie"
+    - family-names: "Vehi"
+      given-names: "Loua Aurel De Vince"
+    - family-names: "Treskova"
+      given-names: "Marina"
+    - family-names: "Sabourault"
+      given-names: "Cécile"
+    - family-names: "Levin"
+      given-names: "Lisa"
+  title: "Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth - Data and Code Repository"
+  year: 2025
+  month: 1
   url: "https://github.com/aurvl/bcw-paper-2025"
-preferred-citation: |
-  @misc{bcw_data_2025,
-    author       = {Hilmi, Nathalie and Vehi, Loua Aurel De Vince and Treskova, Marina and Sabourault, Cécile and Levin, Lisa},
-    title        = {Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth — Data and Code Repository},
-    year         = {2025},
-    publisher    = {GitHub},
-    url          = {https://github.com/aurvl/bcw-paper-2025},
-    note         = {Version 1.0. Licensed under MIT (code) and CC-BY 4.0 (data and text)},
-  }
