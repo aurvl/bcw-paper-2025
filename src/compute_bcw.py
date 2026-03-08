@@ -197,7 +197,7 @@ def bcw_computer(
     out["oBCW"], out["oBCW_se"] = _mean_and_se(obcw_draws)
     out["Total BCseq"], out["Total BCseq_se"] = _mean_and_se(total_bcseq_draws)
     out["Total BCW"], out["Total BCW_se"] = _mean_and_se(total_bcw_draws)
-
+    
     if debug_audit:
         audit_missingness(
             out,

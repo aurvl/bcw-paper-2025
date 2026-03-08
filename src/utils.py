@@ -104,7 +104,6 @@ def nansum_min_count(x: np.ndarray, *, axis: int, min_count: int = 1) -> np.ndar
     - Sums finite values, ignoring NaN.
     - If the number of finite values along `axis` is < min_count, returns NaN.
     """
-
     arr = np.asarray(x)
     finite = np.isfinite(arr)
     count = np.sum(finite, axis=axis)

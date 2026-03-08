@@ -11,6 +11,7 @@ from shapely import wkt
 from shapely.geometry import shape
 from shapely.geometry.base import BaseGeometry
 from colorama import Fore, Style, init as colorama_init
+from matplotlib.font_manager import FontProperties
 
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
@@ -524,33 +525,19 @@ def categorize_bcw_pcap(i):
 
 
 def circle_area_plot(
-    ecosystem_totals: pd.Series, diameters: list = None, colors: list = None, label_colors: list = None
+    ecosystem_totals: pd.Series, diameters: list = None, colors: list = None, 
+    label_colors: list = None, ax=None
 ) -> None:
-    """
-    Plot a circle area diagram based on values from a pandas Series.
-
-    Args:
-        ecosystem_totals (pd.Series): Series where index are labels (e.g. ecosystem names) and values are numeric (e.g. carbon uptake).
-        diameters (list, optional): Diameters for the circles (must match the length of ecosystem_totals). If None, scaled automatically.
-        colors (list, optional): Fill colors for the circles.
-        label_colors (list, optional): Text label colors for ecosystem names.
-
-    Returns:
-        None
-    """
-
     try:
         n = len(ecosystem_totals)
         if n == 0:
             print("Nothing to plot: empty series.")
             return
 
-        # Default diameters based on relative size if not provided
         if diameters is None:
             max_val = ecosystem_totals.max()
-            diameters = [4 + 16 * (val / max_val)**0.5 for val in ecosystem_totals]  # square root scaling
+            diameters = [4 + 16 * (val / max_val)**0.5 for val in ecosystem_totals]
 
-        # Fallback colors if not enough provided
         if colors is None or len(colors) < n:
             colors = ['lightblue', 'lightgreen', 'lightyellow', 'lightcoral', 'plum', 'skyblue']
             colors = (colors * (n // len(colors) + 1))[:n]
@@ -560,15 +547,10 @@ def circle_area_plot(
 
         labels = ecosystem_totals.index.tolist()
         uptake_values = ecosystem_totals.values.tolist()
-
-        # Positioning: even spacing based on max diameter
         circle_radii = [d / 2 for d in diameters]
         border_spacing = 1.5
-
-        # Calcul des positions des centres des cercles
         positions = []
         current_x = 0
-
         for i, radius in enumerate(circle_radii):
             if i == 0:
                 current_x = radius
@@ -576,10 +558,17 @@ def circle_area_plot(
                 previous_radius = circle_radii[i - 1]
                 current_x += previous_radius + radius + border_spacing
             positions.append(current_x)
-        # Create plot
-        plt.style.use('default')
-        fig, ax = plt.subplots(figsize=(3 * n, 12))
-        for x, diameter, color, text_color, label, value in zip(positions, diameters, colors, label_colors, labels, uptake_values):
+
+        # Si ax non fourni → comportement original
+        if ax is None:
+            plt.style.use('default')
+            fig, ax = plt.subplots(figsize=(3 * n, 12))
+            standalone = True
+        else:
+            standalone = False
+
+        for x, diameter, color, text_color, label, value in zip(
+                positions, diameters, colors, label_colors, labels, uptake_values):
             circle = plt.Circle((x, 5), diameter / 2, color=color, alpha=0.7)
             ax.add_artist(circle)
             font_size = max(15, min(25, diameter * 2.5))
@@ -589,14 +578,17 @@ def circle_area_plot(
             else:
                 ax.text(x, 5, f"{value/1e3:.2f}\nGtC yr⁻¹", fontsize=font_size,
                         ha='center', va='center', color='black')
-            ax.text(x, 5 - diameter / 2 - 0.7, label, fontsize=19, ha='center', va='center', color=text_color)
+            ax.text(x, 5 - diameter / 2 - 0.7, label, fontsize=19,
+                    ha='center', va='center', color=text_color)
 
         ax.set_aspect('equal')
         ax.set_xlim(-2, max(positions) + border_spacing * 4)
         ax.set_ylim(-10, 18)
         ax.axis('off')
-        plt.tight_layout()
-        plt.show()
+
+        if standalone:
+            plt.tight_layout()
+            plt.show()
 
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -680,7 +672,9 @@ def mapper_bc(
     cmap: object = "viridis",
     title: str = "",
     subtitle: str = "",
+    num: str = "",
     wld: Optional[gpd.GeoDataFrame] = None,
+    crs: Optional[str] = None,
     *,
     bins: Optional[list] = None,
     bin_labels: Optional[list] = None,
@@ -734,6 +728,9 @@ def mapper_bc(
     world = wld[["ISO_A3", "NAME", "CONTINENT", "geometry"]].copy()
     world = world[world["NAME"] != "Antarctica"]
 
+    if crs is not None:
+        world = world.to_crs(crs)
+    
     df = dtfm.copy()
 
     # ── Auto-scale var according to units prefix ────────────────────────────
@@ -853,6 +850,26 @@ def mapper_bc(
             category_colors.setdefault(missing_label, missing_color)
 
         fig, ax = plt.subplots(figsize=figsize)
+        # legend_handles = []
+        # for cat in categories:
+        #     col = category_colors.get(cat, missing_color)
+        #     subset = country_data[country_data["_cat"] == cat]
+        #     subset = subset[subset.geometry.notnull()]
+        #     if not subset.empty:
+        #         subset.plot(ax=ax, color=col, edgecolor=edgecolor, linewidth=linewidth)
+        #         legend_handles.append(Patch(color=col, label=cat))
+
+        # if show_legend:
+        #     ax.legend(
+        #         handles=legend_handles,
+        #         bbox_to_anchor=legend_bbox,
+        #         loc=legend_loc,
+        #         fontsize=12,
+        #         frameon=False,
+        #         ncol=legend_ncol,
+        #         title=ecosystem,
+        #         title_fontsize=12,
+        #     )
         legend_handles = []
         for cat in categories:
             col = category_colors.get(cat, missing_color)
@@ -860,19 +877,27 @@ def mapper_bc(
             subset = subset[subset.geometry.notnull()]
             if not subset.empty:
                 subset.plot(ax=ax, color=col, edgecolor=edgecolor, linewidth=linewidth)
-                legend_handles.append(Patch(color=col, label=cat))
+                # Ajoute une bordure grise et carré pour la légende
+                legend_handles.append(Patch(facecolor=col, edgecolor="#D3D3D3", linewidth=0.8, label=cat))
 
         if show_legend:
-            ax.legend(
+            legend = ax.legend(
                 handles=legend_handles,
                 bbox_to_anchor=legend_bbox,
                 loc=legend_loc,
-                fontsize=12,
+                fontsize=10,
                 frameon=False,
                 ncol=legend_ncol,
                 title=ecosystem,
-                title_fontsize=12,
+                title_fontproperties=FontProperties(weight='bold', size=12),
+                handleheight=1.0,   # carré
+                handlelength=1.0,   # carré
+                borderpad=0.8,
+                columnspacing=1.2,
+                handletextpad=1.0,
             )
+            if legend.get_title() is not None:
+                legend.get_title().set_ha('left')
 
     # ---------------------------
     # CATEGORICAL (categorizer)
@@ -944,10 +969,13 @@ def mapper_bc(
 
     # Titles/layout
     if title:
-        fig.suptitle(title, fontsize=16, fontweight="bold", x=0.1, ha="left", y=0.925)
+        fig.suptitle(title, fontsize=16, fontweight="bold", x=0.15, ha="left", y=0.925)
     if subtitle:
-        fig.text(0.1, 0.875, subtitle, fontsize=12, ha="left", va="top")
-
+        fig.text(0.15, 0.875, subtitle, fontsize=12, ha="left", va="top")
+    
+    if num is not None and num != "":
+        fig.text(0.115, 0.925, num, fontsize=14, weight='bold', ha='left', va='top')  # reserve space for subtitle
+    
     ax.axis("off")
 
     bottom_pad = 0.10 if (show_legend and isinstance(legend_bbox, tuple) and len(legend_bbox) > 1 and legend_bbox[1] < 0) else 0.02
@@ -1204,12 +1232,15 @@ def map_and_barplot(
     title: str,
     subtitle: str,
     xlabel_bar: str,
+    num: str = "",
+    ecosystem: str = None,
     labels: list = None,
     bar: bool = True,
     fig_size_map: tuple = (14, 10),
     fig_size_bar: tuple = (5, 2),
     cmap_palette: str = 'Blues',
     wld=None,
+    crs=None,
     units: str = "",
     already_scaled: bool = True,
     legend_bbox: tuple = (0.5, -0.1),
@@ -1321,11 +1352,14 @@ def map_and_barplot(
         plt.show()
 
     # ── 2. Choropleth via mapper_bc ────────────────────────────────────────────
+    if ecosystem is None:
+        ecosystem = var  # fallback for legend title
     mapper_bc(
         dtfm=df,
         var=var,
-        ecosystem=var,
+        ecosystem=ecosystem,
         wld=wld,
+        crs=crs,
         bins=thresholds,
         bin_labels=bin_labels_arg,
         cmap=cmap_arg,
@@ -1333,6 +1367,7 @@ def map_and_barplot(
         units=units,
         already_scaled=already_scaled,
         title=title,
+        num=num,
         subtitle=subtitle,
         figsize=fig_size_map,
         legend_bbox=legend_bbox,
@@ -1342,9 +1377,17 @@ def map_and_barplot(
     )
 
 
-def wind_rose(df: pd.DataFrame, segment_col: str = 'Segment', label_col: str = 'Label',
-              value_col: str = 'Value', category_col: str = None, n_top: int = 10,
-              category_colors: dict = None, figsize: tuple = (18, 18)) -> None:
+def wind_rose(
+    df: pd.DataFrame, 
+    segment_col: str = 'Segment', 
+    label_col: str = 'Label',
+    value_col: str = 'Value', 
+    category_col: str = None, 
+    n_top: int = 10,
+    category_colors: dict = None, 
+    figsize: tuple = (18, 18),
+    num: str = "",
+) -> None:
     """
     Generate a radial bar chart (wind-rose style) showing the top n entities per
     segment, coloured by category.
@@ -1433,6 +1476,9 @@ def wind_rose(df: pd.DataFrame, segment_col: str = 'Segment', label_col: str = '
         ax.legend(handles=legend_handles, loc='lower right', fontsize=15)
     ax.grid(True, linestyle="-", alpha=0.7, axis='y')
 
+    if num != "":
+        fig.text(0.15, 0.9, num, fontsize=25, fontweight='bold', ha='center', va='top')
+    
     plt.show()
 
 
@@ -1459,7 +1505,7 @@ def stats_for_group(df: pd.DataFrame, group_name: str,
 
     n_countries = df_conv['ISO'].nunique()
 
-    stats = df_conv[num_cols].agg(['mean', 'median', 'std']).round(3)
+    stats = df_conv[num_cols].agg(['sum', 'mean', 'median', 'std']).round(3)
     stats.reset_index(inplace=True)
     stats.rename(columns={'index': 'Stat'}, inplace=True)
 

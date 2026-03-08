@@ -63,16 +63,16 @@ DEFAULT_VARIANTS: tuple[GSCCVariantSpec, ...] = (
         dmgfuncpar=frozenset({"estimates"}),
         sampling_scheme="uniform",
     ),
-    # GSCCVariantSpec(
-    #     name="bootstrap_only_weighted",
-    #     dmgfuncpar=frozenset({"bootstrap"}),
-    #     sampling_scheme="weighted",
-    # ),
-    # GSCCVariantSpec(
-    #     name="estimates_only_weighted",
-    #     dmgfuncpar=frozenset({"estimates"}),
-    #     sampling_scheme="weighted",
-    # ),
+    GSCCVariantSpec(
+        name="bootstrap_only_weighted",
+        dmgfuncpar=frozenset({"bootstrap"}),
+        sampling_scheme="weighted",
+    ),
+    GSCCVariantSpec(
+        name="estimates_only_weighted",
+        dmgfuncpar=frozenset({"estimates"}),
+        sampling_scheme="weighted",
+    ),
     GSCCVariantSpec(
         name="mixed_uniform",
         dmgfuncpar=frozenset({"bootstrap", "estimates"}),
