@@ -1,7 +1,7 @@
 README: Description of columns in country_level_bcw.csv
 ======================================================
 
-This file describes each column of output/country_level_bcw.csv, based on the source code (notably main.py) and scripts in the repository.
+This file describes each column of output/country_level_bcw.csv.
 
 1. country_name:
    - Name of the country or territory.
