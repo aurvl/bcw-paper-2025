@@ -39,6 +39,7 @@ The study develops an integrated metric of **Blue Carbon Wealth** (BCW) that com
 │
 ├── output/                             # Outputs written by main.py
 │   ├── country_level_bcw.csv           # Final BCW dataset (one row per country/territory)
+│   ├── readme.txt                      # Description of the final BCW dataset (country_level_bcw.csv)
 │   ├── draws.npz                       # Full Monte Carlo draw matrices (GSCC, BCE, BCW)
 │   ├── bcw_finance_indicators.csv      # BCW relative to GDP, debt, and CO₂ liability
 │   ├── switchers_quadrant.csv          # Countries changing BCW quartile under sensitivity scenarios
