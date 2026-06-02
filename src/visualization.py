@@ -1539,6 +1539,7 @@ def plot_eez_choropleth(
     clip_land=False,
     units="km\u00b2",
     already_scaled: bool = True,
+    ax=None,
 ):
     """
     Plot a choropleth over EEZ polygons only (not land).
@@ -1750,7 +1751,11 @@ def plot_eez_choropleth(
     # ------------------------------------------------------------------ #
     # 10. Figure and axes
     # ------------------------------------------------------------------ #
-    fig, ax = plt.subplots(figsize=figsize)
+    created_fig = ax is None
+    if created_fig:
+        fig, ax = plt.subplots(figsize=figsize)
+    else:
+        fig = ax.figure
 
     # EEZ polygons (draw first). We will draw land *on top* afterwards to
     # prevent coastal EEZ polygons from visually bleeding onto land.
@@ -1806,10 +1811,11 @@ def plot_eez_choropleth(
         ax.set_title(title, fontsize=14, fontweight="bold", pad=10)
     # plt.tight_layout()
     # keep small padding for title/legend
-    pad = 0.2
-    fig.subplots_adjust(left=0.02, right=0.98, top=0.96, bottom=0.02)
-    ax.set_position([0.02, 0.02, 0.96, 0.94])
     ax.margins(0)
-    plt.tight_layout(pad=pad)
+    if created_fig:
+        pad = 0.2
+        fig.subplots_adjust(left=0.02, right=0.98, top=0.96, bottom=0.02)
+        ax.set_position([0.02, 0.02, 0.96, 0.94])
+        plt.tight_layout(pad=pad)
 
     return fig, ax, eez_disp

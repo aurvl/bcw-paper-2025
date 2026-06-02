@@ -1,18 +1,33 @@
-# Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth
+# **Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth**
 
 **Authors:** Nathalie Hilmi, Loua Aurel De Vince Vehi, Marina Treskova, Cécile Sabourault, Lisa Levin
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Blue_natural_capital-0E7490?style=for-the-badge" alt="Blue natural capital">
+  <img src="https://img.shields.io/badge/Ecosystemic_services-16A34A?style=for-the-badge" alt="Ecosystemic services">
+  <img src="https://img.shields.io/badge/Blue_carbon-2563EB?style=for-the-badge" alt="Blue carbon">
+  <img src="https://img.shields.io/badge/Ocean_economy-0F766E?style=for-the-badge" alt="Ocean economy">
+  <img src="https://img.shields.io/badge/Coastal_nations-4F46E5?style=for-the-badge" alt="Coastal nations">
+</p>
 
 ---
 
 This repository provides supporting data, code, and visualization tools for the article:
 
-**Hilmi, N., Vehi, L. A. D. V., Treskova, M., Sabourault, C., & Levin, L. (2025). _Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth_.**
+> **Hilmi, N., Vehi, L. A. D. V., Treskova, M., Sabourault, C., & Levin, L. (2025). _Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth_.**
 
-The study develops an integrated metric of **Blue Carbon Wealth** (BCW) that combines **Coastal Blue Carbon Ecosystems** (BCEs) — mangroves, seagrasses, and saltmarshes — with the open-ocean **Biological Carbon Pump** (BCP), the large-scale transfer of organic carbon driven by phytoplankton. Uncertainty is propagated throughout via Monte Carlo simulation (B = 20 000 draws), and the **Global Social Cost of Carbon** (GSCC) is derived from a ridge-regression structure-adjusted estimator built on the Ricke et al. (2018) country-level CSCC database.
+<p align="center">
+  The study develops an integrated metric of <strong>Blue Carbon Wealth</strong> (BCW) that combines <strong>Coastal Blue Carbon Ecosystems</strong> (BCEs) (mangroves, seagrasses, and saltmarshes) with the open-ocean <strong>Biological Carbon Pump</strong> (BCP), the large-scale transfer of organic carbon driven by phytoplankton. Uncertainty is propagated throughout via Monte Carlo simulation, and an updated <strong>Global Social Cost of Carbon</strong> (GSCC), derived from a ridge-regression structure-adjusted estimator built on the Ricke et al. (2018) country-level CSCC database.
+</p>
 
 ---
 
 ## Repository structure
+<details>
+  <summary title="Repository structure">
+    <strong>Tree</strong>
+  </summary>
+
 
 ```
 ├── data_source/                        # Core input datasets
@@ -52,6 +67,8 @@ The study develops an integrated metric of **Blue Carbon Wealth** (BCW) that com
 └── README.md
 ```
 
+</details>
+
 ---
 
 ## Methodology overview
@@ -68,49 +85,55 @@ The study develops an integrated metric of **Blue Carbon Wealth** (BCW) that com
 
 ## Reproduce results
 
-### 1. Clone this repository
+<details>
+  <summary title="Process">
+    <strong>Process</strong>
+  </summary>
 
-```bash
-git clone https://github.com/aurvl/bcw-paper-2025.git
-cd bcw-paper-2025
-```
+  ### 1. Clone this repository
 
-### 2. Set up a Python environment
+  ```bash
+  git clone https://github.com/aurvl/bcw-paper-2025.git
+  cd bcw-paper-2025
+  ```
 
-Python **3.11.9** is required.
+  ### 2. Set up a Python environment
 
-```bash
-python -m venv .venv
-```
+  Python **3.11.9** is required.
 
-- **Windows:** `.\\.venv\\Scripts\\activate`
-- **macOS / Linux:** `source .venv/bin/activate`
+  ```bash
+  python -m venv .venv
+  ```
 
-### 3. Install dependencies
+  - **Windows:** `.\\.venv\\Scripts\\activate`
+  - **macOS / Linux:** `source .venv/bin/activate`
 
-```bash
-pip install -r requirements.txt
-```
+  ### 3. Install dependencies
 
-### 4. Run the pipeline
+  ```bash
+  pip install -r requirements.txt
+  ```
 
-```bash
-python -m src.compute_gscc  # Optional: pre-compute the structure-adjusted GSCC distribution
-python -m main              # Run the full pipeline from BCE extraction to BCW computation and output generation
-```
+  ### 4. Run the pipeline
 
-This preprocesses all inputs, computes BCE sequestration uptakes, derives the structure-adjusted GSCC distribution, propagates uncertainty through the BCW calculation, and writes all outputs to `output/` and intermediate summaries to `data_source/summary/`.
+  ```bash
+  python -m src.compute_gscc  # Optional: pre-compute the structure-adjusted GSCC distribution
+  python -m main              # Run the full pipeline from BCE extraction to BCW computation and output generation
+  ```
 
-### 5. Explore results in notebooks
+  This preprocesses all inputs, computes BCE sequestration uptakes, derives the structure-adjusted GSCC distribution, propagates uncertainty through the BCW calculation, and writes all outputs to `output/` and intermediate summaries to `data_source/summary/`.
 
-Open the `notebooks/` folder and run:
+  ### 5. Explore results in notebooks
 
-| Notebook | Purpose |
-|----------|---------|
-| `paper.ipynb` | Reproduces all figures and tables from the article |
-| `eda.ipynb` | Dataset-level exploration and quality checks |
-| `gscc_explorer.ipynb` | Step-through of the GSCC ridge-adjustment method with robustness diagnostics |
+  Open the `notebooks/` folder and run:
 
+  | Notebook | Purpose |
+  |----------|---------|
+  | `paper.ipynb` | Reproduces all figures and tables from the article |
+  | `eda.ipynb` | Dataset-level exploration and quality checks |
+  | `gscc_explorer.ipynb` | Step-through of the GSCC ridge-adjustment method with robustness diagnostics |
+
+</details>
 
 ---
 
@@ -129,8 +152,8 @@ Open the `notebooks/` folder and run:
 
 This repository uses a dual open-license model.
 
-- All **code** (Python files and notebooks) is released under the **MIT License**.
-- All **data and written content** (datasets, figures, and documentation) are released under the **Creative Commons Attribution 4.0 International License (CC-BY 4.0)**.
+- All **code** (Python files and notebooks) is released under the **MIT License**. See [LICENSE](LICENSE).
+- All **data and written content** (datasets, figures, and documentation) are released under the **Creative Commons Attribution 4.0 International License (CC-BY 4.0)**. See [LICENSE-CC-BY-4.0](LICENSE-CC-BY-4.0).
 
 ---
 
