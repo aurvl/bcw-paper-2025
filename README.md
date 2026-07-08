@@ -1,4 +1,4 @@
-# **Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth**
+# **Global assessment shows blue carbon wealth dominated by ocean processes and unevenly distributed across countries**
 
 **Authors:** Nathalie Hilmi, Loua Aurel De Vince Vehi, Marina Treskova, Cécile Sabourault, Lisa Levin
 
@@ -14,7 +14,7 @@
 
 This repository provides supporting data, code, and visualization tools for the article:
 
-> **Hilmi, N., Vehi, L. A. D. V., Treskova, M., Sabourault, C., & Levin, L. (2025). _Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth_.**
+> **Hilmi, N., Vehi, L. A. D. V., Treskova, M., Sabourault, C., & Levin, L. (2026). _Global assessment shows blue carbon wealth dominated by ocean processes and unevenly distributed across countries_.**
 
 <p align="center">
   The study develops an integrated metric of <strong>Blue Carbon Wealth</strong> (BCW) that combines <strong>Coastal Blue Carbon Ecosystems</strong> (BCEs) (mangroves, seagrasses, and saltmarshes) with the open-ocean <strong>Biological Carbon Pump</strong> (BCP), the large-scale transfer of organic carbon driven by phytoplankton. Uncertainty is propagated throughout via Monte Carlo simulation, and an updated <strong>Global Social Cost of Carbon</strong> (GSCC), derived from a ridge-regression structure-adjusted estimator built on the Ricke et al. (2018) country-level CSCC database.
@@ -166,8 +166,8 @@ When reusing or citing this work, please reference:
 ```bibtex
 @misc{bcw_data_2025,
   author    = {Hilmi, Nathalie and Vehi, Loua Aurel De Vince and Treskova, Marina and Sabourault, Cécile and Levin, Lisa},
-  title     = {Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth — Data and Code Repository},
-  year      = {2025},
+  title     = {Global assessment shows blue carbon wealth dominated by ocean processes and unevenly distributed across countries},
+  year      = {2026},
   publisher = {GitHub},
   url       = {https://github.com/aurvl/bcw-paper-2025},
   note      = {Version 1.0. Licensed under MIT (code) and CC-BY 4.0 (data and text)},
@@ -175,4 +175,4 @@ When reusing or citing this work, please reference:
 ```
 
 **APA:**
-> Hilmi, N., Vehi, L. A. D. V., Treskova, M., Sabourault, C., & Levin, L. (2025). *Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth — Data and Code Repository.* GitHub. https://github.com/aurvl/bcw-paper-2025
+> Hilmi, N., Vehi, L. A. D. V., Treskova, M., Sabourault, C., & Levin, L. (2026). *Global assessment shows blue carbon wealth dominated by ocean processes and unevenly distributed across countries.* GitHub. https://github.com/aurvl/bcw-paper-2025
