@@ -3,7 +3,7 @@ message: "If you use this repository in your research, please cite it as shown b
 type: dataset
 title: "Global assessment shows blue carbon wealth dominated by ocean processes and unevenly distributed across countries - Data and Code Repository"
 version: "1.0"
-date-released: 2026-01-01
+date-released: 2026-07-07
 authors:
   - family-names: "Hilmi"
     given-names: "Nathalie"
@@ -31,5 +31,5 @@ preferred-citation:
       given-names: "Lisa"
   title: "Global assessment shows blue carbon wealth dominated by ocean processes and unevenly distributed across countries - Data and Code Repository"
   year: 2026
-  month: 1
+  month: 7
   url: "https://github.com/aurvl/bcw-paper-2025"
