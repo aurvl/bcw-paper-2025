@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this repository in your research, please cite it as shown below."
 type: dataset
-title: "Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth - Data and Code Repository"
+title: "Global assessment shows blue carbon wealth dominated by ocean processes and unevenly distributed across countries - Data and Code Repository"
 version: "1.0"
-date-released: 2025-01-01
+date-released: 2026-01-01
 authors:
   - family-names: "Hilmi"
     given-names: "Nathalie"
@@ -29,7 +29,7 @@ preferred-citation:
       given-names: "Cécile"
     - family-names: "Levin"
       given-names: "Lisa"
-  title: "Revisiting Blue Natural Capital: Assessing Global and National Blue Carbon Wealth - Data and Code Repository"
-  year: 2025
+  title: "Global assessment shows blue carbon wealth dominated by ocean processes and unevenly distributed across countries - Data and Code Repository"
+  year: 2026
   month: 1
   url: "https://github.com/aurvl/bcw-paper-2025"
