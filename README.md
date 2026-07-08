@@ -175,4 +175,4 @@ When reusing or citing this work, please reference:
 ```
 
 **APA:**
-> Hilmi, N., Vehi, L. A. D. V., Treskova, M., Sabourault, C., & Levin, L. (2026). *Global assessment shows blue carbon wealth dominated by ocean processes and unevenly distributed across countries.* Data and Code Repository. https://github.com/aurvl/bcw-paper-2025
+> Hilmi, N., Vehi, L. A. D. V., Treskova, M., Sabourault, C., & Levin, L. (2026). *Global assessment shows blue carbon wealth dominated by ocean processes and unevenly distributed across countries - Data and Code Repository*. GitHub. https://github.com/aurvl/bcw-paper-2025
